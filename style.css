@@ -10,9 +10,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 300px 50px;
-    width: auto;
     padding: 0px 325px;
-    margin: auto;
     align-items: center;
     background-color:coral;
   }
@@ -35,8 +33,7 @@ h3{
   
     /*Navigation*/
 nav{
-    width: 1000px;
-    margin: auto;
+    width: 100%;
     background-color: rgb(235, 85, 26);
     margin-bottom: 25px;
 }
@@ -105,13 +102,12 @@ button{
 /*Beginning of main section and grid CSS*/
 .landing{
     display:grid;
-    grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 350px 1fr;
+    grid-template-rows: auto;
     }
 
 /*Try to get this work in "landing box" section*/
-.box{
+.box {
     display: grid;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
@@ -120,43 +116,62 @@ button{
     background-color: #e2dcc8;
     /*This box shadow is number 23 from the getcssscan.com website shadow box*/
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
+    grid-column: 2/4;
 }
-/*The header grid item
-.item1{
+/*The header grid item*/
+.item1 {
+    grid-column: 2/4;
+    grid-row-start: 1;
 }
-*/
 
 /*The nav grid item*/
-.item2{
-    grid-column-start: 1/2;
-}
-
-/*The menu picture button*/
-.item3{
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-/*The place an order button*/
-.item4{
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-/*Menu Preview Header*/
-.item5{
+.item2 {
     grid-column: 2/4;
     grid-row-start: 2;
 }
 
+/*The menu picture button*/
+.item3 {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e2dcc8;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+/*The place an order button*/
+.item4{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e2dcc8;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+/*Menu Preview Header*/
+.item5{
+    grid-column: 2/4;
+    grid-row-start: 4;
+}
+
 /*About Us*/
 .item6{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e2dcc8;
     grid-column: 2/4;
+    grid-row-start: 5;
 }
 
 /*Google Map Grid Item*/
 .item7{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e2dcc8;
     grid-column: 2/4;
-    grid-row-start: 3;
+    grid-row-start: 6;
 }
 
 .headerbreak{
