@@ -170,7 +170,7 @@ button{
     text-align: center;
 }
 
-/*Beginnning of subsection menu preivew css*/
+/*Beginning of subsection menu preivew css*/
 .menugrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
