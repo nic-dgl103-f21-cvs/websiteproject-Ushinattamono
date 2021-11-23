@@ -10,7 +10,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 300px 50px;
-    padding: 0px 325px;
+    justify-content: center;
     align-items: center;
     background-color:coral;
   }
@@ -28,7 +28,8 @@ header {
 
     /*Ichiban Sushi header*/
 h1 {
-    padding: 0 0 0 100px;
+    padding: 0px;
+    font-size: 32px;
     color:white;
     /*This code was taken from a helpful person on stackoverflow.com*/
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -126,6 +127,7 @@ button {
 
     /*The header grid item*/
 .item1 {
+    border-radius: 20px 20px 0 0;
     grid-column: 2/4;
     grid-row-start: 1;
 }
