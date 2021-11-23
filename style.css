@@ -2,7 +2,6 @@ body{
     display: grid;
     background-image: url(images/background.png);
     background-size: cover;
-
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     flex-direction: column;
