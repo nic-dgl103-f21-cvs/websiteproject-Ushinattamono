@@ -335,23 +335,6 @@ iframe{
     grid-row: 3;
 }
 
-/*The border and box for the about page*/
-.aboutpage{
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid;
-    border-color: #000000;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #e2dcc8;
-    grid-column: 2/4;
-    grid-row: 3;
-    text-align: center;
-}
-
-.aboutpage .aboutusimage img{
-    opacity: 0.4;
-}
 
 /*The pictures of food in the menu page*/
 .menupictures{
@@ -362,12 +345,38 @@ iframe{
     width: 100%;
 }
 
+/*The border and box for the about page*/
+.aboutpage{
+    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+    border: 1px solid;
+    border-color: #000000;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #e2dcc8;
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.aboutpage .aboutusimage img{
+    opacity: 0.4;
+}
+
+.abouttext{
+    padding: 25px;
+}
+
 /*Centered Image text on the about page*/
 .centered {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
   }
 
   .centered2 {
@@ -375,12 +384,57 @@ iframe{
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
   }
 
-/*The about text on the index page*/
-.abouttext {
-    padding: 50px;
+/*Custom CSS for the reviews*/
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.reviewtext {
+    align-self: center;
+    margin: 10px;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: #d3cdba;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+}
+
+.r1 {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 0px;
+}
+
+.r2 {
+    grid-column: 2;
+    grid-row: 2;
+    border-left: 0px;
+}
+
+.r3 {
+    grid-column: 1;
+    grid-row: 3;
+    border-right: 0px;
+ }
+
+ /*Readers Choice Grid image and properties*/
+ .readerschoice img{
+    display: flex;
+    width: 100%;
+    grid-row: 4;
+ }
 
     /*====================
         Table Properties
