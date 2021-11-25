@@ -14,9 +14,17 @@ header {
     align-items: center;
     background-color:#ff7f50;
   }
-    /*====================
-        Image properties
-    ======================*/
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 8px;
+}
+    /*===============================
+        Universal Image properties
+    ================================*/
 
     /*Removes the default margin on images*/
   figure {
@@ -229,9 +237,9 @@ iframe{
     height: 500px;
 }
 
-     /*====================
-        Sub Section
-    ======================*/
+    /*===========================
+        Sub Section for Index
+    ===========================*/
 .menugrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -320,7 +328,9 @@ iframe{
     grid-column: 1;
     grid-row: 4;
 }
-
+/*=======================
+      Menu Page CSS
+========================*/
 /*The border and box for the menu page*/
 .menupage{
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
@@ -357,6 +367,8 @@ iframe{
     grid-column: 2/4;
     text-align: center;
 }
+
+/*End of Menu Page CSS*/
 
 .aboutpage .aboutusimage img{
     opacity: 0.4;
@@ -482,6 +494,7 @@ iframe{
 
 .wrapper-form {
     display: grid;
+    align-items: start;
     grid-template-columns: 1fr 1fr;
     border: 1px solid;
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
@@ -544,7 +557,7 @@ iframe{
     width: 45px;
   }
   
-  label[for="quantity"]{
+  label{
     font-size: 16px;
   }
   
@@ -553,8 +566,9 @@ iframe{
   }
   
   fieldset {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 16px;
     border: 1px solid #ccc;
   }
@@ -563,7 +577,17 @@ iframe{
     font-size: 0.8rem;
     color: rgb(150, 3, 3);
   }
-  
+
+  .formappetizers{
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    margin: 0;
+} 
+    .formheader{
+    text-align: center;
+    margin: 0;
+} 
     /*====================
        Footer Properties
     =====================*/
