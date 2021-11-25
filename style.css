@@ -477,7 +477,11 @@ table {
        Form Properties
     =====================*/
 
+
+
 .wrapper-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid;
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
     border-color: #000000;
@@ -489,7 +493,17 @@ table {
     grid-column: 2/4;
     grid-row: 4;
   }
-  
+
+.formheader {
+  grid-column: 1/4;  
+  grid-row: 1;
+}
+
+.formcontent {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
   .wrapper-button {
     display: flex;
     justify-content: center;

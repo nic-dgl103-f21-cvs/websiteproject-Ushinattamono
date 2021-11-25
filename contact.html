@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Brandon Britton's Ichiban Sushi Website -->
-    <title>Ichiban Sushi</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="ichiban.css" />
-    <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main>
-      <section class="grid">
-        <header class="item1">
-          <h1>Ichiban Sushi</h1>
-          <a href="index.html">
-            <div class="logo">
-            <img src="images/logo.png" alt="Ichiban Sushi"/>
-          </div>
-          </a>
-        </header>
 
-        <nav class="item2">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="menupage">
+<head>
+  <!-- Brandon Britton's Ichiban Sushi Website -->
+  <title>Ichiban Sushi</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="ichiban.css" />
+  <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="grid">
+      <header class="item1">
+        <h1>Ichiban Sushi</h1>
+        <a href="index.html">
+          <div class="logo">
+            <img src="images/logo.png" alt="Ichiban Sushi" />
+          </div>
+        </a>
+      </header>
+
+      <nav class="item2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menupage">
         <h2>Find us at:</h2>
         <p>932 Fitzgerald Ave, Courtenay, BC</p>
         <p>(250)-703-2156</p>
       </div>
       <div class="wrapper-form">
-        <h2>Place an Order</h2>
-        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+        <h2 class="formheader">Place an Order</h2>
+        <div class="formcontent">
+          <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Ex: Brandon">
 
@@ -46,88 +49,96 @@
             <input type="text" id="phone" name="phone" placeholder="Ex: 250 999 9999" required>
 
             <fieldset>
-                <legend>Select which foods you'd like to order:</legend>
+              <legend>Select which foods you'd like to order:</legend>
 
-                <input type="checkbox" id="soupcheck" name="soupcheck" value="yes">
-                <label for="soupcheck">Miso Soup</label>
-                <label for="misosoup">Quantity</label>
-                <input type="number" name="misosoup" id="misosoup" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="soupcheck" name="soupcheck" value="yes">
+              <label for="soupcheck">Miso Soup</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="misosoup" id="misosoup" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="gstcheck" name="gstcheck" value="yes">
-                <label for="gstcheck">Grilled Spicy Tuna</label>
-                <label for="gst">Quantity</label>
-                <input type="number" name="gst" id="gst" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="gstcheck" name="gstcheck" value="yes">
+              <label for="gstcheck">Grilled Spicy Tuna</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="gst" id="gst" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="asashimicheck" name="asashimicheck" value="yes">
-                <label for="asashimicheck">Assorted Sashimi</label>
-                <label for="asashimi">Quantity</label>
-                <input type="number" name="asashimi" id="asashimi" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="asashimicheck" name="asashimicheck" value="yes">
+              <label for="asashimicheck">Assorted Sashimi</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="asashimi" id="asashimi" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="tamagomakicheck" name="tamagomakicheck" value="yes">
-                <label for="tamagomakicheck">Tamago Maki</label>
-                <label for="tamagomaki">Quantity</label>
-                <input type="number" name="tamagomaki" id="tamagomaki" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="tamagomakicheck" name="tamagomakicheck" value="yes">
+              <label for="tamagomakicheck">Tamago Maki</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="tamagomaki" id="tamagomaki" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="salmonmakicheck" name="salmonmakicheck" value="yes">
-                <label for="salmonmakicheck">Salmon Maki</label>
-                <label for="salmonmaki">Quantity</label>
-                <input type="number" name="salmonmaki" id="salmonmaki" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="salmonmakicheck" name="salmonmakicheck" value="yes">
+              <label for="salmonmakicheck">Salmon Maki</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="salmonmaki" id="salmonmaki" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="tunamakicheck" name="tunamakicheck" value="yes">
-                <label for="tunamakicheck">Tuna Maki</label>
-                <label for="tunamaki">Quantity</label>
-                <input type="number" name="tunamaki" id="tunamaki" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="tunamakicheck" name="tunamakicheck" value="yes">
+              <label for="tunamakicheck">Tuna Maki</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="tunamaki" id="tunamaki" min="0" max="20">
+              <br><br>
 
-                <input type="checkbox" id="SunomonoSaladCheck" name="SunomonoSaladCheck" value="yes">
-                <label for="SunomonoSaladCheck">Sunomono Salad</label>
-                <label for="SunomonoSalad">Quantity</label>
-                <input type="number" name="SunomonoSalad" id="SunomonoSalad" min="0" max="20">
-                <br><br>
+              <input type="checkbox" id="SunomonoSaladCheck" name="SunomonoSaladCheck" value="yes">
+              <label for="SunomonoSaladCheck">Sunomono Salad</label>
+              <br>
+              <label for="quantity">Quantity</label>
+              <input type="number" name="SunomonoSalad" id="SunomonoSalad" min="0" max="20">
+              <br><br>
 
             </fieldset>
 
             <label for="message">Special Notes</label>
             <textarea id="message" name="message"
-                placeholder="Let us know if you want anything special about your order, or if you have allergies or other food concerns."
-                style="height:200px"></textarea>
+              placeholder="Let us know if you want anything special about your order, or if you have allergies or other food concerns."
+              style="height:200px"></textarea>
 
             <div class="wrapper-button">
-                <input type="submit" value="Submit">
+              <input type="submit" value="Submit">
             </div>
-        </form>
-    </div>
-      <div class="item7">
-          <div class="gmap_canvas">
-            <iframe
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed">
-            </iframe>
-            <a href="https://www.whatismyip-address.com/divi-discount/"></a>
-            <a href="https://www.embedgooglemap.net"> </a>
-          </div>
+          </form>
         </div>
-        <footer>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <br>
-            <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to
-              be seen outside of the class environment. None of the content and images were approved by the business
-              owner.
-            </p>
-          </nav>
-        </footer>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="item7">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas"
+            src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+          <a href="https://www.whatismyip-address.com/divi-discount/"></a>
+          <a href="https://www.embedgooglemap.net"> </a>
+        </div>
+      </div>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <br>
+          <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to
+            be seen outside of the class environment. None of the content and images were approved by the business
+            owner.
+          </p>
+        </nav>
+      </footer>
+    </section>
+  </main>
+</body>
+
 </html>
