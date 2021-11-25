@@ -33,6 +33,75 @@
         <p>932 Fitzgerald Ave, Courtenay, BC</p>
         <p>(250)-703-2156</p>
       </div>
+      <div class="wrapper-form">
+        <h2>Place an Order</h2>
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ex: Brandon">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Ex: Britton">
+
+            <label for="phone">Phone Number <span class="label-required">* (required)</span></label>
+            <input type="text" id="phone" name="phone" placeholder="Ex: 250 999 9999" required>
+
+            <fieldset>
+                <legend>Select which foods you'd like to order:</legend>
+
+                <input type="checkbox" id="soupcheck" name="soupcheck" value="yes">
+                <label for="soupcheck">Miso Soup</label>
+                <label for="misosoup">Quantity</label>
+                <input type="number" name="misosoup" id="misosoup" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="gstcheck" name="gstcheck" value="yes">
+                <label for="gstcheck">Grilled Spicy Tuna</label>
+                <label for="gst">Quantity</label>
+                <input type="number" name="gst" id="gst" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="asashimicheck" name="asashimicheck" value="yes">
+                <label for="asashimicheck">Assorted Sashimi</label>
+                <label for="asashimi">Quantity</label>
+                <input type="number" name="asashimi" id="asashimi" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="tamagomakicheck" name="tamagomakicheck" value="yes">
+                <label for="tamagomakicheck">Tamago Maki</label>
+                <label for="tamagomaki">Quantity</label>
+                <input type="number" name="tamagomaki" id="tamagomaki" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="salmonmakicheck" name="salmonmakicheck" value="yes">
+                <label for="salmonmakicheck">Salmon Maki</label>
+                <label for="salmonmaki">Quantity</label>
+                <input type="number" name="salmonmaki" id="salmonmaki" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="tunamakicheck" name="tunamakicheck" value="yes">
+                <label for="tunamakicheck">Tuna Maki</label>
+                <label for="tunamaki">Quantity</label>
+                <input type="number" name="tunamaki" id="tunamaki" min="0" max="20">
+                <br><br>
+
+                <input type="checkbox" id="SunomonoSaladCheck" name="SunomonoSaladCheck" value="yes">
+                <label for="SunomonoSaladCheck">Sunomono Salad</label>
+                <label for="SunomonoSalad">Quantity</label>
+                <input type="number" name="SunomonoSalad" id="SunomonoSalad" min="0" max="20">
+                <br><br>
+
+            </fieldset>
+
+            <label for="message">Special Notes</label>
+            <textarea id="message" name="message"
+                placeholder="Let us know if you want anything special about your order, or if you have allergies or other food concerns."
+                style="height:200px"></textarea>
+
+            <div class="wrapper-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
       <div class="item7">
           <div class="gmap_canvas">
             <iframe
@@ -43,6 +112,8 @@
             <a href="https://www.embedgooglemap.net"> </a>
           </div>
         </div>
+
+
 
         <footer>
           <nav>

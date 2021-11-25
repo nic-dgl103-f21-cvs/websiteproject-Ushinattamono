@@ -472,6 +472,81 @@ table {
 
 /*End table properties*/
 
+
+    /*====================
+       Form Properties
+    =====================*/
+
+.wrapper-form {
+    border: 1px solid;
+    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+    border-color: #000000;
+    background-color: #d3cdba;
+    padding: 10px;
+    font-size: 16px;
+    border-top: 0px;
+    max-width: auto;
+    grid-column: 2/4;
+    grid-row: 4;
+  }
+  
+  .wrapper-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Form Controls*/
+  
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 95%;
+    padding: 12px 0px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="phone"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="number"]{
+    width: 45px;
+  }
+  
+  label[for="quantity"]{
+    font-size: 16px;
+  }
+  
+  textarea {
+    font-family: sans-serif;
+  }
+  
+  fieldset {
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .label-required {
+    font-size: 0.8rem;
+    color: rgb(150, 3, 3);
+  }
+  
     /*====================
        Footer Properties
     =====================*/
