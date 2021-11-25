@@ -321,17 +321,36 @@ iframe{
     grid-row: 4;
 }
 
+/*The border and box for the menu page*/
 .menupage{
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
     border: 1px solid;
     border-color: #000000;
     border-right: 0px;
     border-bottom: 0px;
-    border-radius: 20px 20px 0px 00px;
+    border-radius: 20px 20px 0px 0px;
     padding: 10px;
     background-color: #e2dcc8;
     grid-column: 2/4;
     grid-row: 3;
+}
+
+/*The border and box for the about page*/
+.aboutpage{
+    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+    border: 1px solid;
+    border-color: #000000;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #e2dcc8;
+    grid-column: 2/4;
+    grid-row: 3;
+    text-align: center;
+}
+
+.aboutpage .aboutusimage img{
+    opacity: 0.4;
 }
 
 /*The pictures of food in the menu page*/
@@ -343,9 +362,24 @@ iframe{
     width: 100%;
 }
 
+/*Centered Image text on the about page*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 /*The about text on the index page*/
 .abouttext {
-    padding-left: 20px;
+    padding: 50px;
 }
 
     /*====================
@@ -384,7 +418,15 @@ table {
 
 /*End table properties*/
 
+    /*====================
+       Footer Properties
+    =====================*/
+
 footer {
     grid-column: 2/4;
     grid-row-start: 7;
+}
+
+footer p{
+    padding: 0px 0px 10px 10px;
 }

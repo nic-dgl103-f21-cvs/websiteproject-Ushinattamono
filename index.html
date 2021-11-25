@@ -1,193 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Brandon Britton's Ichiban Sushi Website -->
-    <title>Ichiban Sushi</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <main>
-      <section class="grid">
-        <header class="item1">
-          <h1>Ichiban Sushi</h1>
-          <a href="index.html">
-            <div class="logo">
-            <img src="images/logo.png" alt="Ichiban Sushi"/>
+<head>
+  <!-- Brandon Britton's Ichiban Sushi Website -->
+  <title>Ichiban Sushi</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <main>
+    <section class="grid">
+      <header class="item1">
+        <h1>Ichiban Sushi</h1>
+        <a href="index.html">
+          <div class="logo">
+            <img src="images/logo.png" alt="Ichiban Sushi" />
           </div>
-          </a>
-        </header>
+        </a>
+      </header>
 
-        <nav class="item2">
+      <nav class="item2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="item3">
+        <button class="menubutton" onclick="window.location.href='menu.html'">
+          View the Menu
+        </button>
+      </div>
+      <div class="item4">
+        <button class="place" onclick="window.location.href='contact.html'">
+          Place an Order
+        </button>
+        <h3>Open Hours</h3>
+        <ul>
+          <li>Sunday, 4pm-8pm</li>
+          <li>Monday-Friday, 12pm-8pm</li>
+          <li>Saturday, Closed</li>
+        </ul>
+        <h3>Location</h3>
+        <p>932 Fitzgerald Ave, Courtenay, BC</p>
+        <h3>Phone Us!</h3>
+        <p>250-703-2156</p>
+      </div>
+
+      <section class="item5">
+        <h2 class="headerbreak">Menu Preview</h2>
+        <div class="menugrid">
+          <!--Appetizer Picture Subitem-->
+          <div class="subitem1">
+            <figure>
+              <img src="images/gyoza.png" alt="gyoza" width="300" />
+              <figcaption>Gyoza</figcaption>
+            </figure>
+          </div>
+          <!--Appetizer Table Subitem-->
+          <div class="subitem2">
+            <table>
+              <th colspan="3">
+                <h3>Appetizers</h3>
+              </th>
+              <tr>
+                <td colspan="2">Gyoza</td>
+                <td>$7.95</td>
+              </tr>
+              <tr>
+                <td colspan="2">Spring Rolls</td>
+                <td>$5.50</td>
+              </tr>
+              <tr>
+                <td colspan="2">Spicy Grilled Tuna</td>
+                <td>$14.50</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Sunomono Salad</td>
+                <td>Veggie</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Shrimp</td>
+                <td>$5.95</td>
+              </tr>
+              <tr>
+                <td>Real Crab or Octopus</td>
+                <td>$6.95</td>
+              </tr>
+            </table>
+          </div>
+
+          <!--Sushi Picture Subitem-->
+          <div class="subitem3">
+
+            <figure>
+              <img src="images/sushi.png" alt="sushi" width="300" />
+              <figcaption>Red Dragon and Dynamite Roll</figcaption>
+            </figure>
+          </div>
+          <!--Sushi Table Subitem-->
+          <div class="subitem4">
+            <table>
+              <th colspan="2">
+                <h3>Sushi</h3>
+              </th>
+              <tr>
+                <td>Dynamite Roll</td>
+                <td>$8.50</td>
+              </tr>
+              <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>$9.50</td>
+              </tr>
+              <tr>
+                <td>Real Crab California Roll</td>
+                <td>$11.95</td>
+              </tr>
+              <tr>
+                <td>Crunchy Roll</td>
+                <td>$12.95</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="subitem5">
+
+            <figure>
+              <img src="images/bentobox.png" alt="Bento Boxes" width="300" />
+              <figcaption>Beef Bento Box</figcaption>
+            </figure>
+          </div>
+          <div class="subitem6">
+            <table>
+              <th colspan="2">
+                <h3>Bento Boxes</h3>
+              </th>
+              <tr>
+                <td>Chicken Teriyaki Bento</td>
+                <td>$16.95</td>
+              </tr>
+              <tr>
+                <td>Beef Teriyaki Bento</td>
+                <td>$16.95</td>
+              </tr>
+              <tr>
+                <td>BBQ Duck Bento</td>
+                <td>$16.95</td>
+              </tr>
+            </table>
+          </div>
+          <div class="subitem7">
+            <a href="menu.html">
+              <p>See the full menu</p>
+            </a>
+          </div>
+          <div class="subitem8">
+            <a href="images/DownloadableMenu.pdf">
+              <p>Download a Menu</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="item6">
+        <h2 class="headerbreak">About Us</h2>
+        <p class="abouttext">
+          Ichiban Sushi has been serving the best food in the Comox Valley
+          since 2007.
+        </p>
+      </section>
+      <div class="item7">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas"
+            src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+          <a href="https://www.whatismyip-address.com/divi-discount/"></a>
+          <a href="https://www.embedgooglemap.net"></a>
+        </div>
+      </div>
+      <footer>
+        <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-
-        <div class="item3">
-          <button class="menubutton" onclick="window.location.href='menu.html'">
-            View the Menu
-          </button>
-        </div>
-        <div class="item4">
-          <button class="place" onclick="window.location.href='contact.html'">
-            Place an Order
-          </button>
-          <h3>Open Hours</h3>
-          <ul>
-            <li>Sunday, 4pm-8pm</li>
-            <li>Monday-Friday, 12pm-8pm</li>
-            <li>Saturday, Closed</li>
-          </ul>
-          <h3>Location</h3>
-          <p>932 Fitzgerald Ave, Courtenay, BC</p>
-          <h3>Phone Us!</h3>
-          <p>250-703-2156</p>
-        </div>
-
-        <section class="item5">
-          <h2 class="headerbreak">Menu Preview</h2>
-          <div class="menugrid">
-            <!--Appetizer Picture Subitem-->
-            <div class="subitem1">
-              <figure>
-                <img src="images/gyoza.png" alt="gyoza" width="300" />
-                <figcaption>Gyoza</figcaption>
-              </figure>
-            </div>
-            <!--Appetizer Table Subitem-->
-            <div class="subitem2">
-              <table>
-                <th colspan="3"><h3>Appetizers</h3></th>
-                <tr>
-                  <td colspan="2">Gyoza</td>
-                  <td>$7.95</td>
-                </tr>
-                <tr>
-                  <td colspan="2">Spring Rolls</td>
-                  <td>$5.50</td>
-                </tr>
-                <tr>
-                  <td colspan="2">Spicy Grilled Tuna</td>
-                  <td>$14.50</td>
-                </tr>
-                <tr>
-                  <td rowspan="3">Sunomono Salad</td>
-                  <td>Veggie</td>
-                  <td>$5.00</td>
-                </tr>
-                <tr>
-                  <td>Shrimp</td>
-                  <td>$5.95</td>
-                </tr>
-                <tr>
-                  <td>Real Crab or Octopus</td>
-                  <td>$6.95</td>
-                </tr>
-              </table>
-            </div>
-
-            <!--Sushi Picture Subitem-->
-            <div class="subitem3">
-              
-              <figure>
-                <img src="images/sushi.png" alt="sushi" width="300" />
-                <figcaption>Red Dragon and Dynamite Roll</figcaption>
-              </figure>
-            </div>
-            <!--Sushi Table Subitem-->
-            <div class="subitem4">
-              <table>
-                <th colspan="2"><h3>Sushi</h3></th>
-                <tr>
-                  <td>Dynamite Roll</td>
-                  <td>$8.50</td>
-                </tr>
-                <tr>
-                  <td>Spicy Tuna Roll</td>
-                  <td>$9.50</td>
-                </tr>
-                <tr>
-                  <td>Real Crab California Roll</td>
-                  <td>$11.95</td>
-                </tr>
-                <tr>
-                  <td>Crunchy Roll</td>
-                  <td>$12.95</td>
-                </tr>
-              </table>
-            </div>
-
-            <div class="subitem5">
-              
-              <figure>
-                <img src="images/bentobox.png" alt="Bento Boxes" width="300" />
-                <figcaption>Beef Bento Box</figcaption>
-              </figure>
-            </div>
-            <div class="subitem6">
-              <table>
-                <th colspan="2"><h3>Bento Boxes</h3></th>
-                <tr>
-                  <td>Chicken Teriyaki Bento</td>
-                  <td>$16.95</td>
-                </tr>
-                <tr>
-                  <td>Beef Teriyaki Bento</td>
-                  <td>$16.95</td>
-                </tr>
-                <tr>
-                  <td>BBQ Duck Bento</td>
-                  <td>$16.95</td>
-                </tr>
-              </table>
-            </div>
-            <div class="subitem7">
-              <a href="menu.html">
-                <p>See the full menu</p>
-              </a>
-            </div>
-            <div class="subitem8">
-              <a href="images/DownloadableMenu.pdf">
-                <p>Download a Menu</p>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="item6">
-          <h2 class="headerbreak">About Us</h2>
-          <p class="abouttext">
-            Ichiban Sushi has been serving the best food in the Comox Valley
-            since 2007. 
+          <br>
+          <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to
+            be seen outside of the class environment. None of the content and images were approved by the business
+            owner.
           </p>
-        </section>
-        <div class="item7">
-          <div class="gmap_canvas">
-            <iframe
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=932%20Fitzgerald%20Ave,%20Courtenay,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            >
-            </iframe>
-            <a href="https://www.whatismyip-address.com/divi-discount/"></a>
-            <a href="https://www.embedgooglemap.net"></a>
-          </div>
-        </div>
-        <footer>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </footer>
-      </section>
-    </main>
-  </body>
+        </nav>
+      </footer>
+    </section>
+  </main>
+</body>
+
 </html>
