@@ -12,7 +12,7 @@ header {
     grid-template-columns: 300px 50px;
     justify-content: center;
     align-items: center;
-    background-color:coral;
+    background-color:#ff7f50;
   }
     /*Image properties*/
 
@@ -22,6 +22,10 @@ header {
   }
   figcaption {
       font-size: 12px;
+  }
+  .logo img{
+      padding: 5px;
+      width: 200%;
   }
   
     /*Header Styles*/
