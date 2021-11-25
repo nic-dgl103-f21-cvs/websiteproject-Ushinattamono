@@ -582,11 +582,11 @@ iframe{
     grid-column: 1/4;
     grid-row: 1;
     text-align: center;
-    margin: 0;
+    margin-top: 5;
 } 
     .formheader{
     text-align: center;
-    margin: 0;
+    margin-top: 5;
 } 
     /*====================
        Footer Properties
