@@ -14,7 +14,9 @@ header {
     align-items: center;
     background-color:#ff7f50;
   }
-    /*Image properties*/
+    /*====================
+        Image properties
+    ======================*/
 
     /*Removes the default margin on images*/
   figure {
@@ -27,8 +29,11 @@ header {
       padding: 5px;
       width: 200%;
   }
+    /*End of Image properties*/
   
-    /*Header Styles*/
+    /*====================
+        Header Styles
+    ======================*/
 
     /*Ichiban Sushi header*/
 h1 {
@@ -50,7 +55,9 @@ h3 {
     padding: 10px;
 }
   
-    /*Navigation*/
+    /*====================
+           Navigation
+    ======================*/
 nav {
     width: 100%;
     background-color: rgb(235, 85, 26);
@@ -86,9 +93,9 @@ nav li:hover {
 nav li:hover a {
     color: white;
 }
-    /*End Navigation*/
-
-    /*Buttons CSS*/
+    /*====================
+            Buttons
+    ======================*/
 button {
     cursor: pointer;
     border: none;
@@ -122,7 +129,10 @@ button {
     
 }
     /*End button CSS*/
-    /*Beginning of main section and grid CSS*/
+
+     /*====================
+        Main Body and Grid
+    ======================*/
 .grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -219,7 +229,9 @@ iframe{
     height: 500px;
 }
 
-    /*Beginning of subsection menu preivew css*/
+     /*====================
+        Sub Section
+    ======================*/
 .menugrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -336,7 +348,9 @@ iframe{
     padding-left: 20px;
 }
 
-/*Table properties*/
+    /*====================
+        Table Properties
+    ======================*/
 table {
     width: 100%;
     margin-bottom: 20px;
