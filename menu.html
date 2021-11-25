@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Brandon Britton's Ichiban Sushi Website -->
-    <title>Ichiban Sushi</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="ichiban.css" />
-    <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <main>
-      <section class="grid">
+<head>
+  <!-- Brandon Britton's Ichiban Sushi Website -->
+  <title>Ichiban Sushi</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="ichiban.css" />
+  <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="grid">
       <header class="item1">
         <h1>Ichiban Sushi</h1>
         <a href="index.html">
@@ -28,15 +29,15 @@
         </ul>
       </nav>
       <div class="menupage">
-        
+
         <!--flexbox for menu-->
         <div>
           <section>
             <h3><b>Appetizers</b></h3>
             <div class="menupictures">
-            <figure><img src="images/gyoza.jpg" alt="gyoza" width="300"></figure>
-            <figure><img src="images/grilledspicytuna.jpg" alt="grilled-spicy-tuna" width="300"></figure>
-          </div>
+              <figure><img src="images/gyoza.png" alt="gyoza" width="300"></figure>
+              <figure><img src="images/grilledspicytuna.png" alt="grilled-spicy-tuna" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td colspan="2">Miso Soup</td>
@@ -121,7 +122,9 @@
               </tr>
             </table>
             <h3>Tempura</h3>
-            <figure><img src="images/tempura.jpg" alt="tempura" width="300"></figure>
+            <div class="menupictures">
+              <figure><img src="images/tempura.pngpng" alt="tempura" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td>Salmon Skin Tempura</td>
@@ -149,7 +152,9 @@
               </tr>
             </table>
             <h3>Sashimi</h3>
-            <figure><img src="images/sashimi.jpg" alt="sashimi" width="300"></figure>
+            <div class="menupictures">
+              <figure><img src="images/sashimi.png" alt="sashimi" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td>Salmon Sashimi (5 pieces)</td>
@@ -169,7 +174,9 @@
               </tr>
             </table>
             <h3>Maki Sushi</h3>
-            <figure><img src="images/maki.jpg" alt="maki" width="300"></figure>
+            <div class="menupictures">
+              <figure><img src="images/maki.png" alt="maki" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td colspan="2">Tamago Maki (Japanese Egg Omelet)</td>
@@ -223,15 +230,15 @@
                 <td>
                   (Our Signature Tempura Roll with Salmon and Tuna, topped with
                   Cucumber, Ginger, Strawberry and Tobiko. Served with our mild
-                  spicy House Sauce.  
+                  spicy House Sauce.
                 </td>
                 <td>$12.95</td>
               </tr>
             </table>
             <h3>Uramaki Sushi</h3>
             <div class="menupictures">
-              <figure><img src="images/sushi.jpg" alt="gyoza" width="300"></figure>
-              <figure><img src="images/rainbow.jpg" alt="grilled-spicy-tuna" width="300"></figure>
+              <figure><img src="images/sushi.png" alt="gyoza" width="300"></figure>
+              <figure><img src="images/rainbow.png" alt="grilled-spicy-tuna" width="300"></figure>
             </div>
             <table>
               <tr>
@@ -403,7 +410,9 @@
             </table>
 
             <h3>Nigiri Sushi</h3>
-            <figure><img src="images/nigiri.jpg" alt="nigiri" width="300"></figure>
+            <div class="menupictures">
+              <figure><img src="images/nigiri.png" alt="nigiri" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td>Inari</td>
@@ -442,7 +451,7 @@
               </tr>
               <tr>
                 <td>Sake</td>
-                <td>Wild Sockeye Salmon</td> 
+                <td>Wild Sockeye Salmon</td>
                 <td>$2.95</td>
               </tr>
               <tr>
@@ -476,7 +485,9 @@
               </tr>
             </table>
             <h3>Sushi Cones</h3>
-            <figure><img src="images/cones.jpg" alt="cones" width="300"></figure>
+            \<div class="menupictures">
+              <figure><img src="images/cones.png" alt="cones" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td>California Cone</td>
@@ -545,7 +556,9 @@
             </table>
             <h3>Bento Boxes</h3>
             <p>Served with Miso, Rice, Vegetables, Tempura and Edamame</p>
-            <figure><img src="images/bentobox.jpg" alt="bento box" width="300"></figure>
+            <div class="menupictures">
+              <figure><img src="images/bentobox.png" alt="bento box" width="300"></figure>
+            </div>
             <table>
               <tr>
                 <td>Chicken Teriyaki Bento</td>
@@ -672,7 +685,8 @@
               </tr>
               <tr>
                 <td>Large(10oz.)</td>
-              <td>$10.00</td></tr>
+                <td>$10.00</td>
+              </tr>
               <tr>
                 <td>Japanese Plum Wine</td>
                 <td>(2 oz.)</td>
@@ -698,6 +712,7 @@
                 <td colspan="3">China: Tsingtao (330ml)</td>
                 <td>$6.50</td>
               </tr>
+              <tr>
                 <td colspan="3">Others: Stella, Artois, Corona (330ml)</td>
                 <td>$6.50</td>
               </tr>
@@ -776,15 +791,16 @@
       </div>
       <footer>
         <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-    </footer>
-  </section>
-    </main>
-  </body>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+  </main>
+</body>
+
 </html>

@@ -110,7 +110,7 @@ button {
 
     /*Image background for the menu button*/
 .menubutton {
-    background-image: url("images/nigiri.jpg");
+    background-image: url("images/nigiri.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 275px;
