@@ -353,6 +353,7 @@ iframe{
 
 .menupictures img{
     width: 100%;
+    object-fit: cover;
 }
 
 /*End of Menu Page CSS*/
