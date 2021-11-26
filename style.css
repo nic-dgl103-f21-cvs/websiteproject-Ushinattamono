@@ -364,6 +364,15 @@ iframe{
 ===================*/
 
 /*The border and box for the about page*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 0 1fr 1fr 0;
+    grid-template-rows: auto;
+  }
+
+
+  
 .aboutpage{
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
     border: 1px solid;
@@ -376,10 +385,22 @@ iframe{
     text-align: center;
 }
 
-.aboutpage .aboutusimage img{
-    opacity: 0.4;
-}
+.aboutusimage {
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+    padding: 100px 20px;
+    background-size: cover;
+  }
 
+  .aboutusimage1 {
+    background-image: url("images/ricepad.png");
+  }
+
+  .aboutusimage2 {
+    background-image: url("images/ricepadb.png");
+  }
 
 .abouttext{
     padding: 25px;
@@ -609,3 +630,17 @@ footer {
 footer p{
     padding: 0px 0px 10px 10px;
 }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .grid {
+      grid-template-columns: 20% 1fr 1fr 20%;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
