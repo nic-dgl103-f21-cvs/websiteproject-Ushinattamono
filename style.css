@@ -1,4 +1,54 @@
-@-ms-viewport{ width: device-width; }
+/*================================
+        TABLE OF CONTENTS
+==================================
+
+NOTE THAT THE CSS IS LARGELY DIVIDED BY ORDER THE PAGES WERE CREATED IN.
+THE EXCEPTION IS THE INDEX PAGE, WHICH ALSO HOUSES UNVERSIAL PROPERTIES
+SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
+
+
+1.INDEX PAGE (STARTS ON LINE 49)
+    A. UNIVERSAL PROPERTIES 
+        -Element Properties that exist on all pages, across the entire website.
+        -Header
+        -Navigation bar
+        -Footer
+        -Also the .logo img{} class exists here.
+
+    B. INDEX PAGE CLASSES (STARTS ON LINE 168)
+        -Button CSS
+        -Grid Properties
+        -Grid Items and Subitems
+
+2. MENU PAGE (STARTS ON LINE 396)
+    A. BACKGROUND PROPERTIES
+        -Not much exists for the menu page aside from its background properties, see Contact Page for table properties
+
+3. ABOUT PAGE (STARTS ON LINE 426)
+    A. ABOUT TEXT
+        -Grid and Image links
+        -Centered text properties
+
+    B. REVIEW TEXT
+        -Review Text Properties
+        -Readers Choice Image
+
+4. CONTACT PAGE (STARTS ON LINE 544)
+    A. GRID SETUP
+        -Grid setup for the contact page
+    B. TABLE PROPERTIES
+        -Includes table highlights that the index and menu page take advantage of here
+    C. FORM PROPERTIES
+        -All the CSS relevant to the appearance of the form
+
+5. @MEDIA SCREEN (STARTS ON LINE 701)
+    A. REACTIVE SCREEN SELECTION
+        -For devices of certain resolution sizes
+*/
+
+    /*===============================
+        Universal Properties
+    ================================*/
 
 body {
     display: grid;
@@ -24,10 +74,6 @@ p {
 ul {
     margin: 8px;
 }
-
-    /*===============================
-        Universal Image properties
-    ================================*/
 
     /*Removes the default margin on images*/
   figure {
@@ -105,6 +151,20 @@ nav li:hover {
 nav li:hover a {
     color: white;
 }
+
+  /*====================
+        Footer Properties
+  =====================*/
+
+ footer {
+     grid-column: 2/4;
+     grid-row-start: 7;
+ }
+    
+footer p{
+    padding: 0px 0px 10px 10px;
+}
+
     /*====================
             Buttons
     ======================*/
@@ -142,7 +202,7 @@ button {
 }
     /*End button CSS*/
 
-     /*====================
+    /*====================
         Main Body and Grid
     ======================*/
 .grid {
@@ -332,6 +392,7 @@ iframe{
     grid-column: 1;
     grid-row: 4;
 }
+
 /*=======================
       Menu Page CSS
 ========================*/
@@ -362,7 +423,6 @@ iframe{
 
 /*End of Menu Page CSS*/
 
-
 /*==================
    About Page CSS
 ===================*/
@@ -374,8 +434,6 @@ iframe{
     grid-template-columns: 0 1fr 1fr 0;
     grid-template-rows: auto;
   }
-
-
   
 .aboutpage{
     box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
@@ -483,6 +541,10 @@ iframe{
 
  /*End About Page CSS*/
 
+ /*==============================
+            Contact Page
+    ============================*/
+
     /*====================
         Table Properties
     ======================*/
@@ -524,8 +586,6 @@ iframe{
     /*====================
        Form Properties
     =====================*/
-
-
 
 .wrapper-form {
     display: grid;
@@ -631,24 +691,12 @@ iframe{
     grid-column: 1/4;
     grid-row: 1;
     text-align: center;
-    margin-top: 5;
+    margin-top: 5px;
 } 
     .formheader{
     text-align: center;
-    margin-top: 5;
+    margin-top: 5px;
 } 
-    /*====================
-       Footer Properties
-    =====================*/
-
-footer {
-    grid-column: 2/4;
-    grid-row-start: 7;
-}
-
-footer p{
-    padding: 0px 0px 10px 10px;
-}
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {

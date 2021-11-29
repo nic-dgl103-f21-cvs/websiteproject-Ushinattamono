@@ -20,6 +20,7 @@
 
 <body>
   <main>
+    <!--The entire menu page also exists in a grid, primarily for some images to exist side by side.-->
     <section class="grid">
       <header class="item1">
         <h1>Ichiban Sushi</h1>
@@ -37,16 +38,17 @@
         </ul>
       </nav>
       <div class="menupage">
-
-        <!--flexbox for menu-->
         <div>
           <section>
             <h2><b>Appetizers</b></h2>
+            <!--As you can see, the images that are side by side exist together as an item.-->
             <div class="menupictures">
               <figure><img src="images/gyoza.webp" alt="gyoza" width="288" height="162"></figure>
               <figure><img src="images/grilledspicytuna.webp" alt="grilled-spicy-tuna" width="288" height="162">
               </figure>
             </div>
+            <!--Tables apparently must require a table header to be semantically correct, thus there is
+            a slight repetion in the existance of the header and a table header.-->
             <table>
               <tr>
                 <th colspan="3">
