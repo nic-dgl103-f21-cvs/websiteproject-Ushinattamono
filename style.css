@@ -57,7 +57,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
+    
 }
 header {
     display: grid;
@@ -707,6 +707,9 @@ iframe{
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
     .grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
