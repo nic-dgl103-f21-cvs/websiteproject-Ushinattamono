@@ -4,21 +4,25 @@
 <head>
   <!-- Brandon Britton's Ichiban Sushi Website -->
   <title>Ichiban Sushi</title>
+  <!--Here is a viewport tag that the PageSpeed test wanted the website to have. It scales to device width of whatever device is being used to view the page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
+  <!--I made a favicon for this!-->
   <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
+  <!-- Google font for the Stylish family type-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+  <!--Googlefont for the Quicksand family type-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Stylish&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
   <main>
+    <!--The entire webpage is bound inside a grid. This lets me sort everything within it as an item two-dimenisionally, which is easier to think in compared to one dimension. Each item is named numerically so it is easier to understand which item is meant to be displayed in which order.-->
     <section class="grid">
       <header class="item1">
         <h1>Ichiban Sushi</h1>
@@ -27,6 +31,7 @@
         </div>
       </header>
 
+      <!--Item 2 is the Navigation bar-->
       <nav class="item2">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,11 +41,14 @@
         </ul>
       </nav>
 
+      <!--Item 3 is one of two big calls to action on the main page, check the css for all the image and styles applied to this button!-->
       <div class="item3">
         <button class="menubutton" onclick="window.location.href='menu.html'">
           View the Menu
         </button>
       </div>
+
+      <!--Item 4 is not only the place an order button, but also the headers and lists below it.-->
       <div class="item4">
         <button class="place" onclick="window.location.href='contact.html'">
           Place an Order
@@ -57,8 +65,10 @@
         <p>250-703-2156</p>
       </div>
 
+
       <section class="item5">
         <h2 class="headerbreak">Menu Preview</h2>
+        <!--We have a grid inside of a grid so that we can align the items inside here to a differnet set a columns within the item5 margins-->
         <div class="menugrid">
           <!--Appetizer Picture Subitem-->
           <div class="subitem1">
@@ -69,6 +79,7 @@
           </div>
           <!--Appetizer Table Subitem-->
           <div class="subitem2">
+            <!--The tables on the index page are a short list of popular items, meant to grab the attention of the visitor.-->
             <table>
               <tr>
                 <th colspan="3">Appetizers</th>
@@ -164,6 +175,8 @@
               </tr>
             </table>
           </div>
+
+          <!--An item to see the full menu, which links to the menu page is here, while there is another link that links to a menu you can save or download.-->
           <div class="subitem7">
             <a href="menu.html">
               <p>See the full menu</p>
@@ -176,6 +189,7 @@
           </div>
         </div>
       </section>
+      <!--A section that is a minimal version of the About Us page-->
       <section class="item6">
         <h2 class="headerbreak whitestroke">About Us</h2>
         <p class="abouttext">
@@ -185,6 +199,7 @@
           Valley!
         </p>
       </section>
+      <!--The Google Maps item! We gotta know where to find the restaraunt after all.-->
       <div class="item7">
         <div class="gmap_canvas">
           <iframe id="gmap_canvas"
@@ -192,6 +207,7 @@
           </iframe>
         </div>
       </div>
+      <!--The footer, which is essentially a copy of the navigation bar that exists on the bottom part of the page.-->
       <footer>
         <nav>
           <ul>

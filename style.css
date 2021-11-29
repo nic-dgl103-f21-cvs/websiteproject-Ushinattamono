@@ -410,6 +410,7 @@ iframe{
 .abouttext{
     padding: 25px;
     font-weight: bold;
+    line-height: 2;
 }
 
 /*Centered Image text on the about page*/
