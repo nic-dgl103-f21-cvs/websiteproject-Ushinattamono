@@ -591,6 +591,20 @@ iframe{
   input[type="number"]{
     width: 45px;
   }
+
+  input[type="submit"] {
+    background-color: #0e7a0d;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #0e7a0d;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #00ab66;
+  }
   
   label{
     font-size: 16px;
