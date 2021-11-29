@@ -24,7 +24,7 @@ SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
     A. BACKGROUND PROPERTIES
         -Not much exists for the menu page aside from its background properties, see Contact Page for table properties
 
-3. ABOUT PAGE (STARTS ON LINE 426)
+3. ABOUT PAGE (STARTS ON LINE 428)
     A. ABOUT TEXT
         -Grid and Image links
         -Centered text properties
@@ -33,7 +33,7 @@ SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
         -Review Text Properties
         -Readers Choice Image
 
-4. CONTACT PAGE (STARTS ON LINE 544)
+4. CONTACT PAGE (STARTS ON LINE 547)
     A. GRID SETUP
         -Grid setup for the contact page
     B. TABLE PROPERTIES
@@ -41,7 +41,7 @@ SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
     C. FORM PROPERTIES
         -All the CSS relevant to the appearance of the form
 
-5. @MEDIA SCREEN (STARTS ON LINE 701)
+5. @MEDIA SCREEN (STARTS ON LINE 705)
     A. REACTIVE SCREEN SELECTION
         -For devices of certain resolution sizes
 */
