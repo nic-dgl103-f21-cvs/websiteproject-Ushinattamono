@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     flex-direction: column;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 header {
     display: grid;
@@ -24,6 +24,7 @@ p {
 ul {
     margin: 8px;
 }
+
     /*===============================
         Universal Image properties
     ================================*/
@@ -33,7 +34,8 @@ ul {
       margin-top: 10px;
   }
   figcaption {
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: bold;
   }
   .logo img{
       padding: 5px;
@@ -93,6 +95,7 @@ nav a {
     text-decoration: none;
     color: black;
     display: inline-block;
+    font-weight: bold;
   }
 
 nav li:hover {
@@ -387,9 +390,13 @@ iframe{
 }
 
 .aboutusimage {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     text-align: center;
+    line-height: 1.5;
     padding: 100px 20px;
     background-size: cover;
+    font-family: 'Stylish', sans-serif;
+    font-size: 24px;
   }
 
   .aboutusimage1 {
@@ -402,6 +409,7 @@ iframe{
 
 .abouttext{
     padding: 25px;
+    font-weight: bold;
 }
 
 /*Centered Image text on the about page*/
