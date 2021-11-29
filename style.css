@@ -415,6 +415,7 @@ iframe{
 /*The pictures of food in the menu page*/
 .menupictures{
     display: flex;
+    justify-content: center;
 }
 
 .menupictures img{
