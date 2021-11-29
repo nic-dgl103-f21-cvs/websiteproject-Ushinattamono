@@ -387,9 +387,6 @@ iframe{
 
 .aboutusimage {
     text-align: center;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
     padding: 100px 20px;
     background-size: cover;
   }
@@ -443,13 +440,11 @@ iframe{
     border: 1px solid;
     border-color: #000000;
     border-radius: 20px;
-    background-color: #d3cdba;
+    background-color: #dad5c4;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: white;
-}
+   }
 
 .r1 {
     grid-column: 1;
