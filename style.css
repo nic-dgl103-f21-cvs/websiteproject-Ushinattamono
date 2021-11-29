@@ -146,6 +146,7 @@ nav a {
 
 nav li:hover {
     background-color: lightsalmon;
+    transition: 1s linear;
 }
 
 nav li:hover a {
