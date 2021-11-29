@@ -456,7 +456,8 @@ iframe{
     padding: 100px 20px;
     background-size: cover;
     font-family: 'Stylish', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .aboutusimage1 {
