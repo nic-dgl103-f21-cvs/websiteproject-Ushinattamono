@@ -557,6 +557,7 @@ iframe{
   tr:hover td {
     background-color: rgb(243, 185, 59);
     color: black;
+    transition: ease-in-out 0.5s;
   }
 
   td {
