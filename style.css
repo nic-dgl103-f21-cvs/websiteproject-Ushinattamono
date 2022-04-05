@@ -578,6 +578,11 @@ iframe{
     margin-bottom: 20px;
   }
 
+form h2 {
+    display: block;
+    text-align: center;
+}
+
   tr:hover td {
     background-color: rgb(243, 185, 59);
     color: black;
@@ -700,7 +705,7 @@ iframe{
     font-family: sans-serif;
   }
   
-  fieldset {
+  div.formsection {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
