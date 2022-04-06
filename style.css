@@ -1,12 +1,9 @@
 /*================================
         TABLE OF CONTENTS
 ==================================
-
 NOTE THAT THE CSS IS LARGELY DIVIDED BY ORDER THE PAGES WERE CREATED IN.
 THE EXCEPTION IS THE INDEX PAGE, WHICH ALSO HOUSES UNVERSIAL PROPERTIES
 SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
-
-
 1.INDEX PAGE (STARTS ON LINE 49)
     A. UNIVERSAL PROPERTIES 
         -Element Properties that exist on all pages, across the entire website.
@@ -14,731 +11,644 @@ SUCH AS THE HEADER, FOOTER, AND NAVIGATION BAR.
         -Navigation bar
         -Footer
         -Also the .logo img{} class exists here.
-
-    B. INDEX PAGE CLASSES (STARTS ON LINE 173)
+    B. INDEX PAGE CLASSES (STARTS ON LINE 168)
         -Button CSS
         -Grid Properties
         -Grid Items and Subitems
-
-2. MENU PAGE (STARTS ON LINE 401)
+2. MENU PAGE (STARTS ON LINE 396)
     A. BACKGROUND PROPERTIES
         -Not much exists for the menu page aside from its background properties, see Contact Page for table properties
-
-3. ABOUT PAGE (STARTS ON LINE 450)
+3. ABOUT PAGE (STARTS ON LINE 428)
     A. ABOUT TEXT
         -Grid and Image links
         -Centered text properties
-
     B. REVIEW TEXT
         -Review Text Properties
         -Readers Choice Image
-
-4. CONTACT PAGE (STARTS ON LINE 569)
+4. CONTACT PAGE (STARTS ON LINE 547)
     A. GRID SETUP
         -Grid setup for the contact page
     B. TABLE PROPERTIES
         -Includes table highlights that the index and menu page take advantage of here
     C. FORM PROPERTIES
         -All the CSS relevant to the appearance of the form
-
-5. @MEDIA SCREEN (STARTS ON LINE 727)
+5. @MEDIA SCREEN (STARTS ON LINE 705)
     A. REACTIVE SCREEN SELECTION
         -For devices of certain resolution sizes
 */
-
     /*===============================
         Universal Properties
     ================================*/
-
-html{
-    scroll-behavior: smooth;
-}
-
-body {
-    display: grid;
-    background-image: url(images/background.webp);
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed;
-    flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
-}
-header {
-    display: grid;
-    grid-template-columns: 300px 50px;
-    justify-content: center;
-    align-items: center;
-    background-color:#df6d44;
-  }
-
-p {
-    padding: 0;
-}
-
-ul {
-    margin: 8px;
-}
-
-    /*Removes the default margin on images*/
-  figure {
-      margin-top: 10px;
-  }
-  figcaption {
-      font-size: 14px;
-      font-weight: bold;
-  }
-  .logo img{
-      padding: 5px;
-      width: 200%;
-  }
-    /*End of Image properties*/
-  
-    /*====================
-        Header Styles
-    ======================*/
-
-    /*Ichiban Sushi header*/
-h1 {
-    padding: 0px;
-    font-size: 38px;
-    color:white;
-    /*This code was taken from a helpful person on stackoverflow.com*/
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-    /*About Us and Menu Preview*/
-.whitestroke{
-    color:white;
-}
-    /*Open Hours and Location*/
-h3 {
-    font-size: 24px;
-    margin: 0;
-    padding: 10px;
-}
-  
-    /*====================
-           Navigation
-    ======================*/
-nav {
-    width: 100%;
-    background-color: rgb(235, 85, 26);
-    margin-bottom: 25px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    flex: 2 1 0;
-    text-align: center;
-    cursor: pointer;
-}
-
-nav a {
-    width: 100%;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-weight: bold;
-  }
-
-nav li:hover {
-    background-color: lightsalmon;
-    transition: 1s linear;
-}
-
-nav li:hover a {
-    color: white;
-}
-
-  /*====================
-        Footer Properties
-  =====================*/
-
- footer {
-     grid-column: 2/4;
-     grid-row-start: 7;
- }
-    
-footer p{
-    padding: 0px 0px 10px 10px;
-}
-
-    /*====================
-            Buttons
-    ======================*/
-button {
-    cursor: pointer;
-    border: none;
-    background-color: rgb(255, 71, 71);
-    border-radius: 10px;
-    font-size: 30px;
-    /*This box shadow is number 87 from getcssscan.com shadow examples*/
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    text-decoration: none;
-    color: white;
-    margin: auto;
-    text-shadow: 2px 2px 2px #000000;
-}
-    /*Properties for the place an order button*/
-.place {
-    display: flex;
-    align-items: center;
-    font-size: 28px;
-    padding: 35px;
-    margin: auto;
-    margin-top: 10px;
-}
-
-    /*Image background for the menu button*/
-.menubutton {
-    background-image: url("images/nigiri.webp");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 275px;
-    width: 500px;
-    
-}
-    /*End button CSS*/
-
-    /*====================
-        Main Body and Grid
-    ======================*/
-.grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    html{
+        scroll-behavior: smooth;
     }
-
-    /*The header grid item*/
-.item1 {
-    border-radius: 20px 20px 0 0;
-    grid-column: 2/4;
-    grid-row-start: 1;
-}
-
-    /*The nav grid item*/
-.item2 {
-    grid-column: 2/4;
-    grid-row-start: 2;
-}
-
-    /*The menu picture button*/
-.item3 {
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid;
-    border-color: #000000;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 0px 0px 0px;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-/*The place an order button*/
-.item4 {
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid;
-    border-color: #000000;
-    border-left: 0px;
-    border-bottom: 0px;
-    border-radius: 0px 20px 0px 0px;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
-/*Menu Preview Header*/
-.item5 {
-    /*This box shadow was generated by https://html-css-js.com/css/generator/box-shadow/ */
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border:1px solid rgb(0, 0, 0);
-    border-top: 0px;
-    border-bottom: 0px;
-    color: white;
-    grid-column: 2/4;
-    grid-row-start: 4;
-}
-
-/*About Us*/
-.item6 { 
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border:1px solid rgb(0, 0, 0);
-    border-top: 0px;
-    border-bottom: 0px;
-    background-color: #e2dcc8;
-    grid-column: 2/4;
-    grid-row-start: 5;
-}
-
-/*Google Map Grid Item*/
-.item7 {
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid rgb(0, 0, 0);
-    border-top: 0px;
-    border-bottom: 0px  ;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column: 2/4;
-    grid-row-start: 6;
-}
-
-.headerbreak {
-    text-align: center;
-    background-color: rgb(190, 71, 23);
-    padding:25px;
-    margin: 0;
-}
-    /*Google Map Properties*/
-.gmap_canvas {
-    text-align: center;    
-}
-
-iframe{
-    width: 100%;
-    height: 500px;
-}
-
-    /*===========================
-        Sub Section for Index
-    ===========================*/
-.menugrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-    /*Appetizer Picture subitem*/
-.subitem1 {
-    display: flex;
-    align-items: center;
-    color: black;
-    padding: 0px 0px 0px 30px;
-    background-color: #e2dcc8;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-    /*Appetizer Table Subitem*/
-.subitem2 {
-    color: black;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column: 2;
-    grid-row: 1;
-    
-}
-
-    /*Sushi Picture Subitem*/
-.subitem3 {
-    display: flex;
-    align-items: center;
-    color: black;
-    padding: 0px 0px 0px 30px;
-    background-color: #e2dcc8;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-    /*Sushi Table Subitem*/
-.subitem4 {
-    color: black;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-    /*Bento Box Picture Subitem*/
-.subitem5 {
-    display: flex;
-    align-items: center;
-    color: black;
-    padding: 0px 0px 0px 30px;
-    background-color: #e2dcc8;
-    grid-column: 1;
-    grid-row: 3;
-}
-
-    /*Bento Box Table Subitem*/
-.subitem6 {
-    color: black;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column: 2;
-    grid-row: 3;
-}
-
-    /*See Full Menu Link Subitem*/
-.subitem7 {
-    color: black;
-    text-align: end;
-    padding: 0px 50px 0px 0px;
-    background-color: #e2dcc8;
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.subitem8 {
-    color: black;
-    padding: 0px 0px 0px 50px;
-    background-color: #e2dcc8;
-    grid-column: 1;
-    grid-row: 4;
-}
-
-/*=======================
-      Menu Page CSS
-========================*/
-/*The border and box for the menu page*/
-.menupage{
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid;
-    border-color: #000000;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 10px;
-    background-color: #e2dcc8;
-    grid-column: 2/4;
-    grid-row: 3;
-}
-
-/*This is the CSS for the anchor buttons on the menu page*/
-
-.menupage .subgrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-}
-
-.menupage a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(53, 53, 53);
-    padding: 5px;
-}
-
-.menupage a:hover{
-    color: rgb(211, 27, 211);
-}
-
-/*The pictures of food in the menu page*/
-.menupictures{
-    display: flex;
-    justify-content: center;
-}
-
-.menupictures img{
-    width: 100%;
-    object-fit: cover;
-}
-
-/*End of Menu Page CSS*/
-
-/*==================
-   About Page CSS
-===================*/
-
-/*The border and box for the about page*/
-
-.grid {
-    display: grid;
-    grid-template-columns: 0 1fr 1fr 0;
-    grid-template-rows: auto;
-  }
-  
-.aboutpage{
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border: 1px solid;
-    border-color: #000000;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #e2dcc8;
-    grid-column: 2/4;
-    text-align: center;
-}
-
-.aboutusimage {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    text-align: center;
-    line-height: 1.5;
-    padding: 100px 20px;
-    background-size: cover;
-    font-family: 'Stylish', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .aboutusimage1 {
-    background-image: url("images/ricepad.webp");
-  }
-
-  .aboutusimage2 {
-    background-image: url("images/ricepadb.webp");
-  }
-
-.abouttext{
-    padding: 20px 75px;
-    font-weight: bold;
-    line-height: 2;
-}
-
-/*Centered Image text on the about page*/
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0px 25px 0px 25px;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: white;
-  }
-
-  .centered2 {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0px 25px 0px 25px;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: white;
-  }
-
-/*Custom CSS for the reviews*/
-.reviews{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.reviewtext {
-    align-self: center;
-    margin: 10px;
-    border: 1px solid;
-    border-color: #000000;
-    border-radius: 20px;
-    background-color: #dad5c4;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-   }
-
-.r1 {
-    grid-column: 1;
-    grid-row: 1;
-    border-right: 0px;
-}
-
-.r2 {
-    grid-column: 2;
-    grid-row: 2;
-    border-left: 0px;
-}
-
-.r3 {
-    grid-column: 1;
-    grid-row: 3;
-    border-right: 0px;
- }
-
- /*Readers Choice Grid image and properties*/
- .readerschoice img{
-    display: flex;
-    width: 100%;
-    grid-row: 4;
- }
-
- /*End About Page CSS*/
-
- /*==============================
-            Contact Page
-    ============================*/
-
-    /*====================
-        Table Properties
-    ======================*/
- table {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-form h2 {
-    display: block;
-    text-align: center;
-}
-
-  tr:hover td {
-    background-color: rgb(243, 185, 59);
-    color: black;
-    transition: ease-in-out 0.5s;
-  }
-
-  td {
-      padding: 5px 5px 5px 10px;
-  }
-
-  td:last-child {
-      text-align: right;
-  }
-
-  tr:nth-child(even) {
-    background-color: rgba(248, 223, 195, 0.8)
-  }
-
-  tr:nth-child(odd) {
-    background-color:rgba(248, 230, 210, 0.8)
-  }
-
-  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-size: 18px;
-  }
-
-/*End table properties*/
-
-
-    /*====================
-       Form Properties
-    =====================*/
-
-.wrapper-form {
-    display: grid;
-    align-items: start;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid;
-    box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
-    border-color: #000000;
-    background-color: #d3cdba;
-    padding: 10px;
-    font-size: 16px;
-    border-top: 0px;
-    max-width: 10000px;
-    grid-column: 2/4;
-    grid-row: 4;
-  }
-
-.formheader {
-  grid-column: 1/4;  
-  grid-row: 1;
-}
-
-.formcontent {
-    grid-column: 1/4;
-    grid-row: 2;
-}
-
-  .wrapper-button {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Form Controls*/
-  
-  input,
-  select,
-  textarea {
-    font-size: 1em;
-  }
-  
-  input[type="text"],
-  select,
-  textarea {
-    width: 95%;
-    padding: 12px 0px 12px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type="phone"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type="number"]{
-    width: 45px;
-  }
-
-  input[type="submit"] {
-    background-color: #0e7a0d;
-    color: white;
-    padding: 12px 20px;
-    border: 1px solid #0e7a0d;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #00ab66;
-  }
-  
-  label{
-    font-size: 16px;
-  }
-  
-  textarea {
-    font-family: sans-serif;
-  }
-  
-  div.formsection {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-  }
-  
-  .label-required {
-    font-size: 0.8rem;
-    color: rgb(150, 3, 3);
-  }
-
-  .formappetizers{
-    grid-column: 1/4;
-    grid-row: 1;
-    text-align: center;
-    margin-top: 5px;
-} 
-    .formheader{
-    text-align: center;
-    margin-top: 5px;
-} 
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        background-image: url(images/background.webp);
+        background-size: cover;
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed;
+        flex-direction: column;
+        font-family: 'Quicksand', sans-serif;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 300px 50px;
+        justify-content: center;
+        align-items: center;
+        background-color:#df6d44;
+      }
+    p {
+        padding: 0;
+    }
+    ul {
+        margin: 8px;
+    }
+        /*Removes the default margin on images*/
+      figure {
+          margin-top: 10px;
+      }
+      figcaption {
+          font-size: 14px;
+          font-weight: bold;
+      }
+      .logo img{
+          padding: 5px;
+          width: 200%;
+      }
+        /*End of Image properties*/
+      
+        /*====================
+            Header Styles
+        ======================*/
+        /*Ichiban Sushi header*/
+    h1 {
+        padding: 0px;
+        font-size: 38px;
+        color:white;
+        /*This code was taken from a helpful person on stackoverflow.com*/
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+        /*About Us and Menu Preview*/
+    .whitestroke{
+        color:white;
+    }
+        /*Open Hours and Location*/
+    h3 {
+        font-size: 24px;
+        margin: 0;
+        padding: 10px;
+    }
+      
+        /*====================
+               Navigation
+        ======================*/
+    nav {
+        width: 100%;
+        background-color: rgb(235, 85, 26);
+        margin-bottom: 25px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        flex: 2 1 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    nav a {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-weight: bold;
+      }
+    nav li:hover {
+        background-color: lightsalmon;
+        transition: 1s linear;
+    }
+    nav li:hover a {
+        color: white;
+    }
+      /*====================
+            Footer Properties
+      =====================*/
+     footer {
+         grid-column: 2/4;
+         grid-row-start: 7;
+     }
+        
+    footer p{
+        padding: 0px 0px 10px 10px;
+    }
+        /*====================
+                Buttons
+        ======================*/
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: rgb(255, 71, 71);
+        border-radius: 10px;
+        font-size: 30px;
+        /*This box shadow is number 87 from getcssscan.com shadow examples*/
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        text-decoration: none;
+        color: white;
+        margin: auto;
+        text-shadow: 2px 2px 2px #000000;
+    }
+        /*Properties for the place an order button*/
+    .place {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        padding: 35px;
+        margin: auto;
+        margin-top: 10px;
+    }
+        /*Image background for the menu button*/
+    .menubutton {
+        background-image: url("images/nigiri.webp");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 275px;
+        width: 500px;
+        
+    }
+        /*End button CSS*/
+        /*====================
+            Main Body and Grid
+        ======================*/
     .grid {
-      grid-template-columns: 20% 1fr 1fr 20%;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        }
+        /*The header grid item*/
+    .item1 {
+        border-radius: 20px 20px 0 0;
+        grid-column: 2/4;
+        grid-row-start: 1;
     }
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+        /*The nav grid item*/
+    .item2 {
+        grid-column: 2/4;
+        grid-row-start: 2;
+    }
+        /*The menu picture button*/
+    .item3 {
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border: 1px solid;
+        border-color: #000000;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-radius: 20px 0px 0px 0px;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    /*The place an order button*/
+    .item4 {
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border: 1px solid;
+        border-color: #000000;
+        border-left: 0px;
+        border-bottom: 0px;
+        border-radius: 0px 20px 0px 0px;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    /*Menu Preview Header*/
+    .item5 {
+        /*This box shadow was generated by https://html-css-js.com/css/generator/box-shadow/ */
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border:1px solid rgb(0, 0, 0);
+        border-top: 0px;
+        border-bottom: 0px;
+        color: white;
+        grid-column: 2/4;
+        grid-row-start: 4;
+    }
+    /*About Us*/
+    .item6 { 
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border:1px solid rgb(0, 0, 0);
+        border-top: 0px;
+        border-bottom: 0px;
+        background-color: #e2dcc8;
+        grid-column: 2/4;
+        grid-row-start: 5;
+    }
+    /*Google Map Grid Item*/
+    .item7 {
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border: 1px solid rgb(0, 0, 0);
+        border-top: 0px;
+        border-bottom: 0px  ;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column: 2/4;
+        grid-row-start: 6;
+    }
+    .headerbreak {
+        text-align: center;
+        background-color: rgb(190, 71, 23);
+        padding:25px;
+        margin: 0;
+    }
+        /*Google Map Properties*/
+    .gmap_canvas {
+        text-align: center;    
+    }
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+        /*===========================
+            Sub Section for Index
+        ===========================*/
+    .menugrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        /*Appetizer Picture subitem*/
+    .subitem1 {
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 0px 0px 0px 30px;
+        background-color: #e2dcc8;
+        grid-column: 1;
+        grid-row: 1;
+    }
+        /*Appetizer Table Subitem*/
+    .subitem2 {
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column: 2;
+        grid-row: 1;
+        
+    }
+        /*Sushi Picture Subitem*/
+    .subitem3 {
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 0px 0px 0px 30px;
+        background-color: #e2dcc8;
+        grid-column: 1;
+        grid-row: 2;
+    }
+        /*Sushi Table Subitem*/
+    .subitem4 {
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column: 2;
+        grid-row: 2;
+    }
+        /*Bento Box Picture Subitem*/
+    .subitem5 {
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 0px 0px 0px 30px;
+        background-color: #e2dcc8;
+        grid-column: 1;
+        grid-row: 3;
+    }
+        /*Bento Box Table Subitem*/
+    .subitem6 {
+        color: black;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column: 2;
+        grid-row: 3;
+    }
+        /*See Full Menu Link Subitem*/
+    .subitem7 {
+        color: black;
+        text-align: end;
+        padding: 0px 50px 0px 0px;
+        background-color: #e2dcc8;
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .subitem8 {
+        color: black;
+        padding: 0px 0px 0px 50px;
+        background-color: #e2dcc8;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    /*=======================
+          Menu Page CSS
+    ========================*/
+    /*The border and box for the menu page*/
+    .menupage{
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border: 1px solid;
+        border-color: #000000;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px;
+        background-color: #e2dcc8;
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+    
+    .menupage .subgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .menupage a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(53, 53, 53);
+        padding: 5px;
+    }
+    .menupage a:hover{
+        color: rgb(211, 27, 211);
+    }
+    /*The pictures of food in the menu page*/
+    .menupictures{
+        display: flex;
+        justify-content: center;
+    }
+    .menupictures img{
+        width: 100%;
+        object-fit: cover;
+    }
+    /*End of Menu Page CSS*/
+    /*==================
+       About Page CSS
+    ===================*/
+    /*The border and box for the about page*/
     .grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 0 1fr 1fr 0;
+        grid-template-rows: auto;
+      }
+      
+    .aboutpage{
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border: 1px solid;
+        border-color: #000000;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: #e2dcc8;
+        grid-column: 2/4;
+        text-align: center;
     }
-  }
+    .aboutusimage {
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        text-align: center;
+        line-height: 1.5;
+        padding: 100px 20px;
+        background-size: cover;
+        font-family: 'Stylish', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .aboutusimage1 {
+        background-image: url("images/ricepad.webp");
+      }
+      .aboutusimage2 {
+        background-image: url("images/ricepadb.webp");
+      }
+    .abouttext{
+        padding: 20px 75px;
+        font-weight: bold;
+        line-height: 2;
+    }
+    /*Centered Image text on the about page*/
+    .centered {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px 25px 0px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        color: white;
+      }
+      .centered2 {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px 25px 0px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        color: white;
+      }
+    /*Custom CSS for the reviews*/
+    .reviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .reviewtext {
+        align-self: center;
+        margin: 10px;
+        border: 1px solid;
+        border-color: #000000;
+        border-radius: 20px;
+        background-color: #dad5c4;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+       }
+    .r1 {
+        grid-column: 1;
+        grid-row: 1;
+        border-right: 0px;
+    }
+    .r2 {
+        grid-column: 2;
+        grid-row: 2;
+        border-left: 0px;
+    }
+    .r3 {
+        grid-column: 1;
+        grid-row: 3;
+        border-right: 0px;
+     }
+     /*Readers Choice Grid image and properties*/
+     .readerschoice img{
+        display: flex;
+        width: 100%;
+        grid-row: 4;
+     }
+     /*End About Page CSS*/
+     /*==============================
+                Contact Page
+        ============================*/
+        /*====================
+            Table Properties
+        ======================*/
+     table {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      tr:hover td {
+        background-color: rgb(243, 185, 59);
+        color: black;
+        transition: ease-in-out 0.5s;
+      }
+      td {
+          padding: 5px 5px 5px 10px;
+      }
+      td:last-child {
+          text-align: right;
+      }
+      tr:nth-child(even) {
+        background-color: rgba(248, 223, 195, 0.8)
+      }
+      tr:nth-child(odd) {
+        background-color:rgba(248, 230, 210, 0.8)
+      }
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 18px;
+      }
+    /*End table properties*/
+        /*====================
+           Form Properties
+        =====================*/
+    .wrapper-form {
+        display: grid;
+        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid;
+        box-shadow: 10px 0px 10px 0px rgba(0,0,0,0.71);
+        border-color: #000000;
+        background-color: #d3cdba;
+        padding: 10px;
+        font-size: 16px;
+        border-top: 0px;
+        max-width: 10000px;
+        grid-column: 2/4;
+        grid-row: 4;
+      }
+    .formheader {
+      grid-column: 1/4;  
+      grid-row: 1;
+    }
+    .formcontent {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+      .wrapper-button {
+        display: flex;
+        justify-content: center;
+      }
+      
+      /* Form Controls*/
+      
+      input,
+      select,
+      textarea {
+        font-size: 1em;
+      }
+      
+      input[type="text"],
+      select,
+      textarea {
+        width: 95%;
+        padding: 12px 0px 12px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type="phone"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type="number"]{
+        width: 45px;
+      }
+      input[type="submit"] {
+        background-color: #0e7a0d;
+        color: white;
+        padding: 12px 20px;
+        border: 1px solid #0e7a0d;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #00ab66;
+      }
+      
+      label{
+        font-size: 16px;
+      }
+      
+      textarea {
+        font-family: sans-serif;
+      }
+      
+      fieldset {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+      }
+      
+      .label-required {
+        font-size: 0.8rem;
+        color: rgb(150, 3, 3);
+      }
+      .formappetizers{
+        grid-column: 1/4;
+        grid-row: 1;
+        text-align: center;
+        margin-top: 5px;
+    } 
+        .formheader{
+        text-align: center;
+        margin-top: 5px;
+    } 
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .grid {
+          grid-template-columns: 20% 1fr 1fr 20%;
+        }
+      }
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        .grid {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }

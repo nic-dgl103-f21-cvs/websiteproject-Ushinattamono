@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Brandon Britton's Ichiban Sushi Website -->
   <title>Ichiban Sushi</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ichiban.css" />
   <link rel="icon" href="images/ichiban.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Stylish&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <main>
     <section class="grid">
@@ -25,7 +24,6 @@
           <img src="images/logo.webp" alt="Ichiban Sushi" width="100" height="66" />
         </div>
       </header>
-
       <nav class="item2">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,44 +32,1032 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
       <div class="menupage">
         <h2>Find us at:</h2>
         <p>932 Fitzgerald Ave, Courtenay, BC</p>
         <p>(250)-703-2156</p>
       </div>
-
       <div class="wrapper-form">
         <h2 class="formheader">Place an Order</h2>
-
         <!--This one is a doozy. In this form, it lists all of the menu items that a customer is able
           to select for take-out. Every item has a unique label and input, and it stretches on for more than
         a thousand lines of code. I don't think there's much else special to say here.-->
         <div class="formcontent">
-          <form method="post" id="contactform" action="https://learndigital.dev/programs/dgl103-form.php">
+          <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Ex: Brandon">
 
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Ex: Britton">
-
             <label for="phone">Phone Number <span class="label-required">* (required)</span></label>
             <input type="text" id="phone" name="phone" placeholder="Ex: 250 999 9999" required>
 
-            <fieldset id="contactformfieldset">
+            <fieldset>
               <legend>Select which foods you'd like to order, note that some items cannot be selected for takeout:
               </legend>
+              <h2 class="formappetizers">Appetizers</h2>
+              <div>
+                <input type="checkbox" id="misosoupcheck" name="misosoupcheck" value="yes">
+                <label for="misosoupcheck">Miso Soup</label>
+                <br>
+                <label for="misosoup">Quantity</label>
+                <input type="number" name="misosoup" id="misosoup" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="misotofucheck" name="misotofucheck" value="yes">
+                <label for="misotofucheck">Miso Soup with Tofu</label>
+                <br>
+                <label for="misotofu">Quantity</label>
+                <input type="number" name="misotofu" id="misotofu" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="edamamecheck" name="edamamecheck" value="yes">
+                <label for="edamamecheck">Edamame</label>
+                <br>
+                <label for="edamame">Quantity</label>
+                <input type="number" name="edamame" id="edamame" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="bakedscallopcheck" name="bakedscallopcheck" value="yes">
+                <label for="bakedscallopcheck">Ichiban Baked Scallop</label>
+                <br>
+                <label for="bakedscallop">Quantity</label>
+                <input type="number" name="bakedscallop" id="bakedscallop" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="takoyakicheck" name="takoyakicheck" value="yes">
+                <label for="takoyakicheck">Takoyaki (6 Pieces)</label>
+                <br>
+                <label for="takoyaki">Quantity</label>
+                <input type="number" name="takoyaki" id="takoyaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="springrollscheck" name="springrollscheck" value="yes">
+                <label for="springrollscheck">Spring Rolls (2 Pieces)</label>
+                <br>
+                <label for="springrolls">Quantity</label>
+                <input type="number" name="springrolls" id="springrolls" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="agedashitofucheck" name="agedashitofucheck" value="yes">
+                <label for="agedashitofucheck">Agedashi Tofu</label>
+                <br>
+                <label for="agedashitofu">Quantity</label>
+                <input type="number" name="agedashitofu" id="agedashitofu" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicyagedashitofucheck" name="spicyagedashitofucheck" value="yes">
+                <label for="spicyagedashitofucheck">Spicy Agedashi Tofu</label>
+                <br>
+                <label for="spicyagedashitofu">Quantity</label>
+                <input type="number" name="spicyagedashitofu" id="spicyagedashitofu" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="gomaecheck" name="gomaecheck" value="yes">
+                <label for="gomaecheck">Goma-ae</label>
+                <br>
+                <label for="gomae">Quantity</label>
+                <input type="number" name="gomae" id="gomae" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicytakosaladcheck" name="spicytakosaladcheck" value="yes">
+                <label for="spicytakosaladcheck">Spicy Tako Salad</label>
+                <br>
+                <label for="spicytakosalad">Quantity</label>
+                <input type="number" name="spicytakosalad" id="spicytakosalad" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="seaweedsaladcheck" name="seaweedsaladcheck" value="yes">
+                <label for="seaweedsaladcheck">Seaweed Salad</label>
+                <br>
+                <label for="seaweedsalad">Quantity</label>
+                <input type="number" name="seaweedsalad" id="seaweedsalad" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sunomonoveggiecheck" name="sunomonoveggiecheck" value="yes">
+                <label for="sunomonoveggiecheck">Sunomono Salad (Veggie)</label>
+                <br>
+                <label for="sunomonoveggie">Quantity</label>
+                <input type="number" name="sunomonoveggie" id="sunomonoveggie" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sunomonoebicheck" name="sunomonoebicheck" value="yes">
+                <label for="sunomonoebicheck">Sunomono Salad (Shrimp)</label>
+                <br>
+                <label for="sunomonoebi">Quantity</label>
+                <input type="number" name="sunomonoebi" id="sunomonoebi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sunomonomixcheck" name="sunomonomixcheck" value="yes">
+                <label for="sunomonomixcheck">Sunomono Salad (Mixed)</label>
+                <br>
+                <label for="sunomonomix">Quantity</label>
+                <input type="number" name="sunomonomix" id="sunomonomix" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="smokedsalmonwrapcheck" name="smokedsalmonwrapcheck" value="yes">
+                <label for="smokedsalmonwrapcheck">Smoked Salmon Wraps</label>
+                <br>
+                <label for="smokedsalmonwrap">Quantity</label>
+                <input type="number" name="smokedsalmonwrap" id="smokedsalmonwrap" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="gyozacheck" name="gyozacheck" value="yes">
+                <label for="gyozacheck">Gyoza</label>
+                <br>
+                <label for="gyoza">Quantity</label>
+                <input type="number" name="gyoza" id="gyoza" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="summerrollscheck" name="summerrollscheck" value="yes">
+                <label for="summerrollscheck">Summer Rolls (2 Pieces)</label>
+                <br>
+                <label for="summerrolls">Quantity</label>
+                <input type="number" name="summerrolls" id="summerrolls" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tunatatakicheck" name="tunatatakicheck" value="yes">
+                <label for="tunatatakicheck">Tuna Tataki</label>
+                <br>
+                <label for="tunatataki">Quantity</label>
+                <input type="number" name="tunatataki" id="tunatataki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="gstcheck" name="gstcheck" value="yes">
+                <label for="gstcheck">Grilled Spicy Tuna</label>
+                <br>
+                <label for="gst">Quantity</label>
+                <input type="number" name="gst" id="gst" min="0" max="20">
+              </div>
+              <!--These breaks in division allow the following header to be centered within the form. aria-colspan"2" seems like it could be a promising alternative and cleaner solution, but I'm not sure how to apply it properly.-->
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Tempura</h2>
+              </div>
+
+              <br>
+
+              <div>
+                <input type="checkbox" id="salmonskintempuracheck" name="salmonskintempuracheck" value="yes">
+                <label for="salmonskintempuracheck">Salmon Skin Tempura</label>
+                <br>
+                <label for="salmonskintempura">Quantity</label>
+                <input type="number" name="salmonskintempura" id="salmonskintempura" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="yamtempuracheck" name="yamtempuracheck" value="yes">
+                <label for="yamtempuracheck">Yam Tempura</label>
+                <br>
+                <label for="yamtempura">Quantity</label>
+                <input type="number" name="yamtempura" id="yamtempura" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="veggietempuracheck" name="veggietempuracheck" value="yes">
+                <label for="veggietempuracheck">Vegetable Tempura</label>
+                <br>
+                <label for="veggietempura">Quantity</label>
+                <input type="number" name="veggietempura" id="veggietempura" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="prawntempuracheck" name="prawntempuracheck" value="yes">
+                <label for="prawntempuracheck">Prawn Tempura</label>
+                <br>
+                <label for="prawntempura">Quantity</label>
+                <input type="number" name="prawntempura" id="prawntempura" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="mixedtempuracheck" name="mixedtempuracheck" value="yes">
+                <label for="mixedtempuracheck">Mixed Tempura</label>
+                <br>
+                <label for="mixedtempura">Quantity</label>
+                <input type="number" name="mixedtempura" id="mixedtempura" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="softshellcrabtempuracheck" name="softshellcrabtempuracheck" value="yes">
+                <label for="softshellcrabtempuracheck">Soft Shell Crab Tempura</label>
+                <br>
+                <label for="softshellcrabtempura">Quantity</label>
+                <input type="number" name="softshellcrabtempura" id="softshellcrabtempura" min="0" max="20">
+              </div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Sashimi</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="salmonsashimicheck" name="salmonsashimicheck" value="yes">
+                <label for="salmonsashimicheck">Salmon Sashimi (5 Pieces)</label>
+                <br>
+                <label for="salmonsashimi">Quantity</label>
+                <input type="number" name="salmonsashimi" id="salmonsashimi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tunasashimicheck" name="tunasashimicheck" value="yes">
+                <label for="tunasashimicheck">Tuna Sashimi (5 Pieces)</label>
+                <br>
+                <label for="tunasashimi">Quantity</label>
+                <input type="number" name="tunasashimi" id="tunasashimi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="asashimicheck" name="asashimicheck" value="yes">
+                <label for="asashimicheck">Assorted Sashimi (6 Pieces)</label>
+                <br>
+                <label for="asashimi">Quantity</label>
+                <input type="number" name="asashimi" id="asashimi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sashimideluxecheck" name="sashimideluxecheck" value="yes">
+                <label for="sashimideluxecheck">Sashimi Deluxe</label>
+                <br>
+                <label for="sashimideluxe">Quantity</label>
+                <input type="number" name="sashimideluxe" id="sashimideluxe" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Maki Sushi</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="tamagomakicheck" name="tamagomakicheck" value="yes">
+                <label for="tamagomakicheck">Tamago Maki</label>
+                <br>
+                <label for="tamagomaki">Quantity</label>
+                <input type="number" name="tamagomaki" id="tamagomaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="kappamakicheck" name="kappamakicheck" value="yes">
+                <label for="kappamakicheck">Kappa Maki</label>
+                <br>
+                <label for="kappamaki">Quantity</label>
+                <input type="number" name="kappamaki" id="kappamaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="avocadomakicheck" name="avocadomakicheck" value="yes">
+                <label for="avocadomakicheck">Avocado Maki</label>
+                <br>
+                <label for="avocadomaki">Quantity</label>
+                <input type="number" name="avocadomaki" id="avocadomaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="ebimakicheck" name="ebimakicheck" value="yes">
+                <label for="ebimakicheck">Ebi Maki</label>
+                <br>
+                <label for="ebimaki">Quantity</label>
+                <input type="number" name="ebimaki" id="ebimaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="salmonmakicheck" name="salmonmakicheck" value="yes">
+                <label for="salmonmakicheck">Salmon Maki</label>
+                <br>
+                <label for="salmonmaki">Quantity</label>
+                <input type="number" name="salmonmaki" id="salmonmaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tunamakicheck" name="tunanmakicheck" value="yes">
+                <label for="tunamakicheck">Tuna Maki</label>
+                <br>
+                <label for="tunamaki">Quantity</label>
+                <input type="number" name="tunamaki" id="tunamaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="negitoromakicheck" name="negitoromakicheck" value="yes">
+                <label for="negitoromakicheck">Negitoro Maki</label>
+                <br>
+                <label for="negitoromaki">Quantity</label>
+                <input type="number" name="negitoromaki" id="negitoromaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="futomakicheck" name="futomakicheck" value="yes">
+                <label for="futomakicheck">Futo Maki</label>
+                <br>
+                <label for="futomaki">Quantity</label>
+                <input type="number" name="futomaki" id="futomaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="ichibanrollcheck" name="ichibanrollcheck" value="yes">
+                <label for="ichibanrollcheck">Ichiban Roll</label>
+                <br>
+                <label for="ichibanroll">Quantity</label>
+                <input type="number" name="ichibanroll" id="ichibanroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="smokingtunarollcheck" name="smokingtunarollcheck" value="yes">
+                <label for="smokingtunarollcheck">Smokin' Tuna Roll</label>
+                <br>
+                <label for="smokingtunaroll">Quantity</label>
+                <input type="number" name="smokingtunaroll" id="smokingtunaroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="specialhouserollcheck" name="specialhouserollcheck" value="yes">
+                <label for="specialhouserollcheck">Special House Roll</label>
+                <br>
+                <label for="specialhouseroll">Quantity</label>
+                <input type="number" name="specialhouseroll" id="specialhouseroll" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Uramaki Sushi</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="calirollcheck" name="calirollcheck" value="yes">
+                <label for="calirollcheck">California Roll</label>
+                <br>
+                <label for="caliroll">Quantity</label>
+                <input type="number" name="caliroll" id="caliroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="yamrollcheck" name="yamrollcheck" value="yes">
+                <label for="yamrollcheck">Yam Roll</label>
+                <br>
+                <label for="yamroll">Quantity</label>
+                <input type="number" name="yamroll" id="yamroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="veggierollcheck" name="veggierollcheck" value="yes">
+                <label for="veggierollcheck">Veggie Roll</label>
+                <br>
+                <label for="veggieroll">Quantity</label>
+                <input type="number" name="veggieroll" id="veggieroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="asparagusrollcheck" name="asparagusrollcheck" value="yes">
+                <label for="asparagusrollcheck">Asparagus Roll</label>
+                <br>
+                <label for="asparagusroll">Quantity</label>
+                <input type="number" name="asparagusroll" id="asparagusroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="happypepperrollcheck" name="happypepperrollcheck" value="yes">
+                <label for="happypepperrollcheck">Happy Pepper Roll</label>
+                <br>
+                <label for="happypepperroll">Quantity</label>
+                <input type="number" name="happypepperroll" id="happypepperroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="bcrollcheck" name="bcrollcheck" value="yes">
+                <label for="bcrollcheck">BC Roll</label>
+                <br>
+                <label for="bcroll">Quantity</label>
+                <input type="number" name="bcroll" id="bcroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="mangorollcheck" name="mangorollcheck" value="yes">
+                <label for="mangorollcheck">Mango Roll</label>
+                <br>
+                <label for="mangoroll">Quantity</label>
+                <input type="number" name="mangoroll" id="mangoroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="teriyakichickenrollcheck" name="teriyakichickenrollcheck" value="yes">
+                <label for="teriyakichickenrollcheck">Teriyaki Chicken Roll</label>
+                <br>
+                <label for="teriyakichickenroll">Quantity</label>
+                <input type="number" name="teriyakichickenroll" id="teriyakichickenroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicyyamandavorollcheck" name="spicyyamandavorollcheck" value="yes">
+                <label for="spicyyamandavorollcheck">Spicy Yam & Avo Roll</label>
+                <br>
+                <label for="spicyyamandavoroll">Quantity</label>
+                <input type="number" name="spicyyamandavoroll" id="spicyyamandavoroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="teriyakichickenandyamrollcheck" name="teriyakichickenandyamrollcheck"
+                  value="yes">
+                <label for="teriyakichickenandyamrollcheck">Teriyaki Chicken & Yam Roll</label>
+                <br>
+                <label for="teriyakichickenandyamroll">Quantity</label>
+                <input type="number" name="teriyakichickenandyamroll" id="teriyakichickenandyamroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="bbqduckrollcheck" name="bbqduckrollcheck" value="yes">
+                <label for="bbqduckrollcheck">BBQ Duck Roll</label>
+                <br>
+                <label for="bbqduckroll">Quantity</label>
+                <input type="number" name="bbqduckroll" id="bbqduckroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="komoxrollcheck" name="komoxrollcheck" value="yes">
+                <label for="komoxrollcheck">Komox Roll</label>
+                <br>
+                <label for="komoxroll">Quantity</label>
+                <input type="number" name="komoxroll" id="komoxroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="dynamiterollcheck" name="dynamiterollcheck" value="yes">
+                <label for="dynamiterollcheck">Dynamite Roll</label>
+                <br>
+                <label for="dynamiteroll">Quantity</label>
+                <input type="number" name="dynamiteroll" id="dynamiteroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicydynamiterollcheck" name="spicydynamiterollcheck" value="yes">
+                <label for="spicydynamiterollcheck">Spicy Dynamite Roll</label>
+                <br>
+                <label for="spicydynamiteroll">Quantity</label>
+                <input type="number" name="spicydynamiteroll" id="spicydynamiteroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="choppedscalloprollcheck" name="choppedscalloprollcheck" value="yes">
+                <label for="choppedscalloprollcheck">Chopped Scallop Roll</label>
+                <br>
+                <label for="choppedscalloproll">Quantity</label>
+                <input type="number" name="choppedscalloproll" id="choppedscalloproll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="phillyrollcheck" name="phillyrollcheck" value="yes">
+                <label for="phillyrollcheck">Philly Roll</label>
+                <br>
+                <label for="phillyroll">Quantity</label>
+                <input type="number" name="phillyroll" id="phillyroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="reddragonrollcheck" name="reddragonrollcheck" value="yes">
+                <label for="reddragonrollcheck">Red Dragon Roll</label>
+                <br>
+                <label for="reddragonroll">Quantity</label>
+                <input type="number" name="reddragonroll" id="reddragonroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="unakyurollcheck" name="unakyurollcheck" value="yes">
+                <label for="unakyurollcheck">Una-Kyu Roll</label>
+                <br>
+                <label for="unakyuroll">Quantity</label>
+                <input type="number" name="unakyuroll" id="unakyuroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicychickenyamandavorollcheck" name="spicychickenyamandavorollcheck"
+                  value="yes">
+                <label for="spicychickenyamandavorollcheck">Spicy Chicken Yam & Avo Roll</label>
+                <br>
+                <label for="spicychickenyamandavoroll">Quantity</label>
+                <input type="number" name="spicychickenyamandavoroll" id="spicychickenyamandavoroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicytunarollcheck" name="spicytunarollcheck" value="yes">
+                <label for="spicytunarollcheck">Spicy Tuna Roll</label>
+                <br>
+                <label for="spicytunaroll">Quantity</label>
+                <input type="number" name="spicytunaroll" id="spicytunaroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="prawnyamandavorollcheck" name="prawnyamandavorollcheck" value="yes">
+                <label for="prawnyamandavorollcheck">Prawn Yam & Avo Roll</label>
+                <br>
+                <label for="prawnyamandavoroll">Quantity</label>
+                <input type="number" name="prawnyamandavoroll" id="prawnyamandavoroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="realcrabcalirollcheck" name="realcrabcalirollcheck" value="yes">
+                <label for="realcrabcalirollcheck">Real Crab California Roll</label>
+                <br>
+                <label for="realcrabcaliroll">Quantity</label>
+                <input type="number" name="realcrabcaliroll" id="realcrabcaliroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="crunchyrollcheck" name="crunchyrollcheck" value="yes">
+                <label for="crunchyrollcheck">Crunchy Roll</label>
+                <br>
+                <label for="crunchyroll">Quantity</label>
+                <input type="number" name="crunchyroll" id="crunchyroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="rainbowrollcheck" name="rainbowrollcheck" value="yes">
+                <label for="rainbowrollcheck">Rainbow Roll</label>
+                <br>
+                <label for="rainbowroll">Quantity</label>
+                <input type="number" name="rainbowroll" id="rainbowroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spiderrollcheck" name="spiderrollcheck" value="yes">
+                <label for="spiderrollcheck">Spider Roll</label>
+                <br>
+                <label for="spiderroll">Quantity</label>
+                <input type="number" name="spiderroll" id="spiderroll" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="lobsterrollcheck" name="lobsterrollcheck" value="yes">
+                <label for="lobsterrollcheck">Lobster Roll</label>
+                <br>
+                <label for="lobsterroll">Quantity</label>
+                <input type="number" name="lobsterroll" id="lobsterroll" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Nigiri</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="inaricheck" name="inaricheck" value="yes">
+                <label for="inaricheck">Inari</label>
+                <br>
+                <label for="inari">Quantity</label>
+                <input type="number" name="inari" id="inari" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tamagocheck" name="tamagocheck" value="yes">
+                <label for="tamagocheck">Tamago</label>
+                <br>
+                <label for="tamago">Quantity</label>
+                <input type="number" name="tamago" id="tamago" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="masagocheck" name="masagocheck" value="yes">
+                <label for="masagocheck">Masago</label>
+                <br>
+                <label for="masago">Quantity</label>
+                <input type="number" name="masago" id="masago" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="ebicheck" name="ebicheck" value="yes">
+                <label for="ebicheck">Ebi</label>
+                <br>
+                <label for="ebi">Quantity</label>
+                <input type="number" name="ebi" id="ebi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="hokkigaicheck" name="hokkigaicheck" value="yes">
+                <label for="hokkigaicheck">Hokkigai</label>
+                <br>
+                <label for="hokkigai">Quantity</label>
+                <input type="number" name="hokkigai" id="hokkigai" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tobikocheck" name="tobikocheck" value="yes">
+                <label for="tobikocheck">Tobiko</label>
+                <br>
+                <label for="tobiko">Quantity</label>
+                <input type="number" name="tobiko" id="tobiko" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="magurocheck" name="magurocheck" value="yes">
+                <label for="magurocheck">Maguro</label>
+                <br>
+                <label for="maguro">Quantity</label>
+                <input type="number" name="maguro" id="maguro" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sakecheck" name="sakecheck" value="yes">
+                <label for="sakecheck">Sake</label>
+                <br>
+                <label for="sake">Quantity</label>
+                <input type="number" name="sake" id="sake" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="hotatecheck" name="hotatecheck" value="yes">
+                <label for="hotatecheck">Hotate</label>
+                <br>
+                <label for="hotate">Quantity</label>
+                <input type="number" name="hotate" id="hotate" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="takocheck" name="takocheck" value="yes">
+                <label for="takocheck">Tako</label>
+                <br>
+                <label for="tako">Quantity</label>
+                <input type="number" name="tako" id="tako" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="unagicheck" name="unagicheck" value="yes">
+                <label for="unagicheck">Unagi</label>
+                <br>
+                <label for="unagi">Quantity</label>
+                <input type="number" name="unagi" id="unagi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="choppedscallopcheck" name="choppedscallopcheck" value="yes">
+                <label for="choppedscallopcheck">Chopped Scallop</label>
+                <br>
+                <label for="choppedscallop">Quantity</label>
+                <input type="number" name="choppedscallop" id="choppedscallop" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="torocheck" name="torocheck" value="yes">
+                <label for="torocheck">Toro</label>
+                <br>
+                <label for="toro">Quantity</label>
+                <input type="number" name="toro" id="toro" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="tobikoandquaileggcheck" name="tobikoandquaileggcheck" value="yes">
+                <label for="tobikoandquaileggcheck">Tobiko and Quail Egg</label>
+                <br>
+                <label for="tobikoandquailegg">Quantity</label>
+                <input type="number" name="tobikoandquailegg" id="tobikoandquailegg" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Sushi Cones</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="californiaconecheck" name="californiaconecheck" value="yes">
+                <label for="californiaconecheck">California Cone</label>
+                <br>
+                <label for="californiacone">Quantity</label>
+                <input type="number" name="californiacone" id="californiacone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="dynamiteconecheck" name="dynamiteconecheck" value="yes">
+                <label for="dynamiteconecheck">Dynamite Cone</label>
+                <br>
+                <label for="dynamitecone">Quantity</label>
+                <input type="number" name="dynamitecone" id="dynamitecone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicydynamiteconecheck" name="spicydynamiteconecheck" value="yes">
+                <label for="spicydynamiteconecheck">Spicy Dynamite Cone</label>
+                <br>
+                <label for="spicydynamitecone">Quantity</label>
+                <input type="number" name="spicydynamitecone" id="spicydynamitecone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicytunaconecheck" name="spicytunaconecheck" value="yes">
+                <label for="spicytunaconecheck">Spicy Tuna Cone</label>
+                <br>
+                <label for="spicytunacone">Quantity</label>
+                <input type="number" name="spicytunacone" id="spicytunacone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="negitoroconecheck" name="negitoroconecheck" value="yes">
+                <label for="negitoroconecheck">Negitoro Cone</label>
+                <br>
+                <label for="negitorocone">Quantity</label>
+                <input type="number" name="negitorocone" id="negitorocone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="choppedscallopconecheck" name="choppedscallopconecheck" value="yes">
+                <label for="choppedscallopconecheck">Chopped Scallop Cone</label>
+                <br>
+                <label for="choppedscallopcone">Quantity</label>
+                <input type="number" name="choppedscallopcone" id="choppedscallopcone" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicyrealcrabandtobikoconecheck" name="spicyrealcrabandtobikoconecheck"
+                  value="yes">
+                <label for="spicyrealcrabandtobikoconecheck">Spicy Real Crab and Tobiko Cone</label>
+                <br>
+                <label for="spicyrealcrabandtobikocone">Quantity</label>
+                <input type="number" name="spicyrealcrabandtobikocone" id="spicyrealcrabandtobikocone" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Sushi Platters</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="assortednigiriplattercheck" name="assortednigiriplattercheck" value="yes">
+                <label for="assortednigiriplattercheck">Assorted Nigiri Platter</label>
+                <br>
+                <label for="assortednigiriplatter">Quantity</label>
+                <input type="number" name="assortednigiriplatter" id="assortednigiriplatter" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="veggieloversplattercheck" name="veggieloversplattercheck" value="yes">
+                <label for="veggieloversplattercheck">Veggie Lovers Platter</label>
+                <br>
+                <label for="veggieloversplatter">Quantity</label>
+                <input type="number" name="veggieloversplatter" id="veggieloversplatter" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="ilovesushiplattercheck" name="ilovesushiplattercheck" value="yes">
+                <label for="ilovesushiplattercheck">I Love Sushi Platter</label>
+                <br>
+                <label for="ilovesushiplatter">Quantity</label>
+                <input type="number" name="ilovesushiplatter" id="ilovesushiplatter" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="sushifortwocheck" name="sushifortwocheck" value="yes">
+                <label for="sushifortwocheck">Sushi for Two</label>
+                <br>
+                <label for="sushifortwo">Quantity</label>
+                <input type="number" name="sushifortwo" id="sushifortwo" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="ichibanpartyplattercheck" name="ichibanpartyplattercheck" value="yes">
+                <label for="ichibanpartyplattercheck">Ichiban Party Platter</label>
+                <br>
+                <label for="ichibanpartyplatter">Quantity</label>
+                <input type="number" name="ichibanpartyplatter" id="ichibanpartyplatter" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Bento Boxes</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="chickenteriyakibentocheck" name="chickenteriyakibentocheck" value="yes">
+                <label for="chickenteriyakibentocheck">Chicken Teriyaki Bento</label>
+                <br>
+                <label for="chickenteriyakibento">Quantity</label>
+                <input type="number" name="chickenteriyakibento" id="chickenteriyakibento" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="beefteriyakibentocheck" name="beefteriyakibentocheck" value="yes">
+                <label for="beefteriyakibentocheck">Beef Teriyaki Bento</label>
+                <br>
+                <label for="beefteriyakibento">Quantity</label>
+                <input type="number" name="beefteriyakibento" id="beefteriyakibento" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="bbqduckbentocheck" name="bbqduckbentocheck" value="yes">
+                <label for="bbqduckbentocheck">BBQ Duck Bento</label>
+                <br>
+                <label for="bbqduckbento">Quantity</label>
+                <input type="number" name="bbqduckbento" id="bbqduckbento" min="0" max="20">
+              </div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Light Fares</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="bbqduckricenoodlecheck" name="bbqduckricenoodlecheck" value="yes">
+                <label for="bbqduckricenoodlecheck">BBQ Duck Rice Noodles</label>
+                <br>
+                <label for="bbqduckricenoodle">Quantity</label>
+                <input type="number" name="bbqduckricenoodle" id="bbqduckricenoodle" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="udonsoupcheck" name="udonsoupcheck" value="yes">
+                <label for="udonsoupcheck">Udon Soup</label>
+                <br>
+                <label for="udonsoup">Quantity</label>
+                <input type="number" name="udonsoup" id="udonsoup" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="yakiudoncheck" name="yakiudoncheck" value="yes">
+                <label for="yakiudoncheck">Yaki Udon</label>
+                <br>
+                <label for="yakiudon">Quantity</label>
+                <input type="number" name="yakiudon" id="yakiudon" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="chickenteriyakidonburicheck" name="chickenteriyakidonburicheck" value="yes">
+                <label for="chickenteriyakidonburicheck">Chicken Teriyaki Donburi</label>
+                <br>
+                <label for="chickenteriyakidonburi">Quantity</label>
+                <input type="number" name="chickenteriyakidonburi" id="chickenteriyakidonburi" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="beefteriyakidonburicheck" name="beefteriyakidonburicheck" value="yes">
+                <label for="beefteriyakidonburicheck">Beef Teriyaki Donburi</label>
+                <br>
+                <label for="beefteriyakidonburi">Quantity</label>
+                <input type="number" name="beefteriyakidonburi" id="beefteriyakidonburi" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Main Dishes</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="panfriedvegetablescheck" name="panfriedvegetablescheck" value="yes">
+                <label for="panfriedvegetablescheck">Pan Fried Vegetables</label>
+                <br>
+                <label for="panfriedvegetables">Quantity</label>
+                <input type="number" name="panfriedvegetables" id="panfriedvegetables" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="chickenteriyakicheck" name="chickenteriyakicheck" value="yes">
+                <label for="chickenteriyakicheck">Chicken Teriyaki</label>
+                <br>
+                <label for="chickenteriyaki">Quantity</label>
+                <input type="number" name="chickenteriyaki" id="chickenteriyaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="beefteriyakicheck" name="beefteriyakicheck" value="yes">
+                <label for="beefteriyakicheck">Beef Teriyaki</label>
+                <br>
+                <label for="beefteriyaki">Quantity</label>
+                <input type="number" name="beefteriyaki" id="beefteriyaki" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="curriedchickencheck" name="curriedchickencheck" value="yes">
+                <label for="curriedchickencheck">Curried Chicken</label>
+                <br>
+                <label for="curriedchicken">Quantity</label>
+                <input type="number" name="curriedchicken" id="curriedchicken" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="spicyprawnscheck" name="spicyprawnscheck" value="yes">
+                <label for="spicyprawnscheck">Spicy Prawns</label>
+                <br>
+                <label for="spicyprawns">Quantity</label>
+                <input type="number" name="spicyprawns" id="spicyprawns" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="garlicbutterprawnscheck" name="garlicbutterprawnscheck" value="yes">
+                <label for="garlicbutterprawnscheck">Garlic Butter Prawns</label>
+                <br>
+                <label for="garlicbutterprawns">Quantity</label>
+                <input type="number" name="garlicbutterprawns" id="garlicbutterprawns" min="0" max="20">
+              </div>
+
+              <div>
+                <input type="checkbox" id="bbqduckcheck" name="bbqduckcheck" value="yes">
+                <label for="bbqduckcheck">BBQ Duck</label>
+                <br>
+                <label for="bbqduck">Quantity</label>
+                <input type="number" name="bbqduck" id="bbqduck" min="0" max="20">
+              </div>
+              <div><br></div>
+              <div><br></div>
+              <div><br></div>
+
+              <div>
+                <h2 class="formheader">Combo Specials</h2>
+              </div>
+              <div><br></div>
+
+              <div>
+                <input type="checkbox" id="comboacheck" name="comboacheck" value="yes">
+                <label for="comboacheck">Combo A (Dynamite Roll)</label>
+                <br>
+                <label for="comboa">Quantity</label>
+                <input type="number" name="comboa" id="comboa" min="0" max="20">
+                <br>
+                <input type="radio" id="misosoupa" name="misosoupa" value="misosoupa">
+                <label for="misosoupa">Miso Soup</label><br>
+                <input type="radio" id="sunomonosalada" name="sunomonosalada" value="sunomonosalada">
+                <label for="sunomonosalada">Sunomono Salad</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="combobcheck" name="combobcheck" value="yes">
+                <label for="combobcheck">Combo B (Yam & Avo Roll)</label>
+                <br>
+                <label for="combob">Quantity</label>
+                <input type="number" name="combob" id="combob" min="0" max="20">
+                <br>
+                <input type="radio" id="misosoupb" name="misosoupb" value="misosoupb">
+                <label for="misosoupb">Miso Soup</label><br>
+                <input type="radio" id="sunomonosaladb" name="sunomonosaladb" value="sunomonosaladb">
+                <label for="sunomonosaladb">Sunomono Salad</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="comboccheck" name="comboccheck" value="yes">
+                <label for="comboccheck">Combo C (BC Roll)</label>
+                <br>
+                <label for="comboc">Quantity</label>
+                <input type="number" name="comboc" id="comboc" min="0" max="20">
+                <br>
+                <input type="radio" id="misosoupc" name="misosoupc" value="misosoupc">
+                <label for="misosoupc">Miso Soup</label><br>
+                <input type="radio" id="sunomonosaladc" name="sunomonosaladc" value="sunomonosaladc">
+                <label for="sunomonosaladc">Sunomono Salad</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="combodcheck" name="combodcheck" value="yes">
+                <label for="combodcheck">Combo D (California Roll)</label>
+                <br>
+                <label for="combod">Quantity</label>
+                <input type="number" name="combod" id="combod" min="0" max="20">
+                <br>
+                <input type="radio" id="misosoupd" name="misosoupd" value="misosoupd">
+                <label for="misosoupd">Miso Soup</label><br>
+                <input type="radio" id="sunomonosaladd" name="sunomonosaladd" value="sunomonosaladd">
+                <label for="sunomonosaladd">Sunomono Salad</label>
+              </div>
+
             </fieldset>
+
             <label for="message">Special Notes</label>
             <textarea id="message" name="message"
               placeholder="Let us know if you want anything special about your order, or if you have allergies or other food concerns."
               style="height:200px"></textarea>
-
             <div class="wrapper-button">
               <input type="submit" value="Submit">
             </div>
           </form>
-          <div id="purchasecost">Test</div>
         </div>
       </div>
       <div class="item7">
@@ -98,7 +1084,6 @@
       </footer>
     </section>
   </main>
-  <script src="contact.js"></script>
 </body>
 
 </html>
